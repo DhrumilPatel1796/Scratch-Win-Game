@@ -1,0 +1,272 @@
+body {
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0,
+    0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88,
+    0.92) 100%);
+}
+
+.logo {
+    width: 7%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.vertical {
+    position: absolute;
+    width: 6px;
+    height: 950px;
+    left: 781px;
+    top: 300px;
+    background: linear-gradient(180deg, rgba(70, 255,
+    222, 0.63) 0%, rgba(23, 172, 255, 0.12) 99.54%,
+    rgba(81, 192, 255, 0) 99.99%);
+}
+
+#in, #up, #play {
+    float: right;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+#in, #up {
+    font-family: Alwyn 'New';
+    border: none;
+    margin-left: 50px;
+    background: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#play {
+    background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
+    129.1%);
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Alwyn 'New';
+    font-weight: bold;
+    margin-top: 40px;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;;
+}
+
+.brandName {
+    margin-left: 180px;
+    color: #ffffff;
+    font-size: 48px;
+    margin-top: 120px;
+    font-family: Alwyn 'New';
+}
+
+.gameName {
+    margin-left: 220px;
+    color: #34e718;
+    font-size: 24px;
+    margin-top: -30px;
+    font-family: Alwyn 'New';
+}
+
+.description {
+    font-size: 14px;
+    color: #fff;
+    margin-left:180px;
+    margin-top: -20px;
+}
+
+.prizeBag {
+    width: 30%;
+    margin-left: 150px;
+}
+
+.one, .five, .ten, .hundred {
+    line-height: 5px;
+    margin-left: 300px;
+    color: #fff;
+    font-family: 'New' Order;
+    font-size: 14px;
+}
+
+.semiCircle, .dollars {
+    width: 10%;
+}
+
+fieldset {
+    border: none;
+}
+
+h2 {
+    font-family: Alwyn 'New';
+    letter-spacing: 2px;
+    font-size: 36px;
+    color: #79E7FF;
+    float: right;
+    margin-top: -850px;
+    margin-right: 350px;
+}
+
+label {
+    float: right;
+    color: #fd73ff;
+    font-size: 20px;
+    font-family: Alwyn 'New';
+    font-weight: bold;
+}
+
+input, select {
+    color: #ffffff;
+    font-size: large;
+}
+
+.firstName, .lastName, .province, .email, .dob, .password {
+    margin-top: -760px;
+    margin-right: 550px;
+}
+
+.lastName {
+    margin-top: -700px;
+    margin-right: 555px;
+}
+
+.province {
+    margin-top: -500px;
+    margin-right: 570px;
+}
+
+.email {
+    margin-top: -600px;
+    margin-right: 595px;
+}
+
+.dob {
+    margin-top: -400px;
+    margin-right: 535px;
+}
+
+.password {
+    margin-top: -280px;
+    margin-right: 565px;
+}
+
+#firstName, #lastName, #province, #email, #password, #agree, #disagree {
+    float: right;
+    width: 25%;
+    margin-top: -740px;
+    margin-right: 255px;
+    font-family: Alwyn 'New';
+    padding-left: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #79E7FF;
+}
+
+#lastName {
+    margin-top: -660px;
+}
+
+#province {
+    width: 26%;
+    margin-top: -460px;
+    margin-right: 260px;
+}
+
+select:hover {
+    color: #000;
+}
+
+#email {
+    margin-right: 260px;
+    margin-top: -560px;
+}
+
+#date, #month, #year {
+    width: 7%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #79E7FF;
+    float: right;
+    margin-left: 20px;
+    margin-right: 540px;
+    margin-top: -350px;
+}
+
+#month {
+    margin-right: 400px;
+}
+
+#year {
+    margin-right: 260px;
+}
+
+#password {
+    margin-top: -240px;
+}
+
+#agree, #disagree {
+    margin-top: -150px;
+    margin-right: 430px;
+}
+
+#disagree {
+    margin-top: -130px;
+    margin-right: 430px;
+}
+
+.agree, .disagree {
+    float: right;
+    font-family: Alwyn New;
+    color: #ffffff;
+    margin-top: -154px;
+}
+
+.agree {
+    margin-right: 350px;
+}
+
+.disagree {
+    margin-top: -134px;
+    margin-right: 305px;
+}
+
+#formSubmit {
+    float: right;
+    margin-top: -80px;
+    margin-right: 250px;
+    background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
+    129.1%);
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    color: #000;
+    font-family: Alwyn 'New';
+    font-weight: bold;
+    border-radius: 40px;
+    box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #040B3A;
+}
+
+.sign {
+    font-family: Alwyn 'New';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 200px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+span {
+    font-family: Alwyn 'New';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-top: -20px;
+}

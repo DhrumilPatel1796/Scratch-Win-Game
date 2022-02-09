@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch & Win Game Form Project</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <input type="button" value="Play To Win" id="play">
+    <input type="button" value="Sign In" id="in">
+    <input type="button" value="Sign Up" id="up">
+    <img class="logo" src="./images/logo.svg" />
+    <h1 class="brandName">BuyMore Dollars</h1>
+    <h3 class="gameName">Scratch and Win Game</h3>
+    <p class="description">Sign up. Scratch! And claim your prize once every 72 hours.</p>
+    <img class="prizeBag" src="./images/neon-moneybag-prize.png" />
+    <p class="one">1 Prize of 10,000 BMD</p>
+    <p class="five">5 Prizes of 750 BMD</p>
+    <p class="ten">10 Prizes of 100 BMD</p>
+    <p class="hundred">100 Prizes of 20 BMD</p>
+    <div class="vertical"></div>
+    <h2>Create an account</h2>
+    <form action="#">
+        <fieldset>
+            <label for="firstName" class="firstName">First Name</label><br>
+            <input name="firstName" id="firstName" type="text">
+            <p id="firstNameError"></p>
+            <label for="lastName" class="lastName">Last Name</label>
+            <input name="lastName" id="lastName" type="text">
+            <p id="lastNameError"></p>
+            <label for="province" class="province">Province</label>
+            <select name="province" id="province">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MN">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NWT">Northwest Territories</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PI">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="YK">Yukon</option>
+            </select>
+            <p id="provinceError"></p>
+            <label for="email" class="email">Email</label>
+            <input name="email" id="email" type="text">
+            <p id="emailError"></p>
+            <label for="dob" class="dob">Date of Birth</label>
+            <input name="Date of Birth" id="date" type="text" placeholder="Date">
+            <input name="Date of Birth" id="month" type="text" placeholder="Month">
+            <input name="Date of Birth" id="year" type="text" placeholder="Year">
+            <p id="dobError"></p>
+            <label for="password" class="password">Password</label>
+            <input name="password" id="password" type="text">
+            <p id="passwordError"></p>
+            <input type="radio" name="consent" id="agree"><p class="agree">I consent to the terms and conditions.</p><br>
+            <input type="radio" name="consent" id="disagree"><p class="disagree">I do not consent to the terms and conditions.</p>
+        </fieldset>
+        <input type="submit" value="Let Me Play!" id="formSubmit">
+    </form>
+    <div class="footer">
+        <p class="sign">Sign Up<span>Terms And Conditions</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
