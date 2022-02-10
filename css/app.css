@@ -1,0 +1,682 @@
+.hideAll {
+    display: none;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header,
+footer {
+    background-color: #ff9900;
+}
+
+.gray {
+    background-color: lightgray;
+    margin-top: 25px;
+}
+
+.gray-1 {
+    min-height: 18.0rem;
+    margin-top: 20px;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.gray-2 {
+    min-height: 18.0rem;
+    background-color: lightgray;
+}
+
+.gray-3 {
+    min-height: 8.0rem;
+    background-color: lightgray;
+}
+
+.gray-4 {
+    background-color: gray;
+}
+
+.gray_splash {
+    background-color: #ff9900;
+    border: none;
+    text-align: center;
+}
+
+.gray_splash img {
+    width: 60%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.abc {
+    margin-top: 30px;
+    display: flex;
+    height: 70px;
+    margin-left: 20px;
+    background-color: #ff9900;
+    border: none;
+    flex-direction: row;
+}
+
+#search {
+    width: 300px;
+    margin-left: 20px;
+    background-color: #ffcc66;
+    text-align: center;
+    border: none;
+}
+
+.abc input::placeholder {
+    color: #000;
+}
+
+.go-department, .go-login, .go-cart {
+    margin-left: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.go-department:hover {
+    color: #fff;
+}
+
+.heading h1 {
+    text-align: center;
+    font-family: "Franklin Gothic Demi";
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.product1 img, .product2 img, .product3 img, .product4 img, .product5 img , .product6 img, .product7 img, .product8 img {
+    width: 51%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.product3 img, .product2 img, .product4 img {
+    width: 42%;
+    margin-left: 70px;
+}
+
+.product2 img {
+    width: 46%;
+}
+
+.product4 img {
+    width: 44%;
+}
+
+.product1 h2, .product2 h2, .product3 h2, .product4 h2, .product5 h2, .product6 h2, .product7 h2, .product8 h2 {
+    text-align: center;
+    color: #669933;
+    font-family: "Franklin Gothic Demi";
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product1 h3, .product2 h3, .product3 h3, .product4 h3, .product5 h3, .product6 h3, .product7 h3, .product8 h3 {
+    text-align: left;
+    color: #666666;
+    font-family: "Arial";
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.items .quantity {
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.items .quantity h3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Arial";
+    background-color: #8ee1af;
+    font-size: 16px;
+    padding-top: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.items .quantity h5 {
+    width: 30px;
+    height: 30px;
+    font-family: "Arial";
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #8ee1af;
+}
+
+.items .quantity h5:hover {
+    background-color: lightgray;
+}
+
+.items h1 {
+    width: 200px;
+    height: 100px;
+    margin-left: 35px;
+    background-color: lightgreen;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.items p, .items .rating, .items h4 {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.items .rating  {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -20px;
+    height: 20px;
+}
+
+.items .pepper, .items .chicken, .depart .product2 .carrots, .depart .product5 .beefsteak, .depart .product7 .apples, .depart .product8 .cherries {
+    margin-left: 20px;
+    margin-top: -20px;
+    height: 20px;
+}
+
+.items h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.items #cart {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: "Franklin Gothic Demi";
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #669933;
+}
+
+.items #cart:hover {
+    background-color: greenyellow;
+    color: #000;
+}
+
+.product1, .product2, .product3, .product4, .product5, .product6, .product7, .product8 {
+    background-color: #ffffcc;
+    border: 2px solid #ff9900;
+}
+
+.department h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Franklin Gothic Demi";
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.image1, .image2, .image3, .image4 {
+    background-color: #ebebeb;
+    height: auto;
+}
+
+.departments img {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.departments p {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-family: "Franklin Gothic Demi";
+    font-weight: 500;
+    color: #999999;
+}
+
+/*  Main Page Styling   */
+
+.crumble {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffcc;
+}
+
+.crumble p {
+    font-size: 20px;
+    color: #666666;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: "Arial Rounded MT Bold";
+}
+
+.depart h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Copperplate Gothic Bold";
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.depart .product2 img {
+    width: 38%;
+    margin-left: 80px;
+}
+
+.depart .product5 img {
+    width: 41%;
+}
+
+.depart .product7 img {
+    width: 43%;
+    margin-left: 70px;
+}
+
+.depart .product8 img {
+    width: 39%;
+    margin-left: 80px;
+} 
+
+.boxes5 {
+    margin-top: 20px;
+}
+
+/*    Cart Page Styling   */
+
+.crumble {
+    width: 100%;
+}
+
+.checkOut h1, .pay h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 10px;
+    border: 5px dotted #ff9900;
+}
+
+tr {
+    border: 2px solid #000;
+}
+
+tr, th {
+    background-color: #ffffcc;
+}
+
+.customerDetails {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.checkout #back, .checkout .go-checkout{
+    background-color: #ffcc66;
+}
+
+.names input, .email input, .code input {
+    width: 300px;
+}
+
+.minus, .plus  {
+    width: 15px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #d6d6d6;
+}
+
+.minus:hover, .plus:hover {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.cross:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.tomatoes, .mangoes, .chicken{
+    color: #666666;
+}
+
+.checkout, .payment, .confirm, .complete, .home, .login, .back {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout input, .payment input, .confirm input, .complete input, .home input, .login input, .back input {
+    width: 200px;
+    background-color: #ffcc66;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout input:hover, .payment input:hover, .confirm input:hover, .complete input:hover, .home input:hover, .login input:hover, .checkout #back:hover {
+    background-color: #ffffcc;
+    color: #000;
+}
+
+/*    Checkout Page Styling   */
+
+
+.checkoutItems table td {
+    background-color: #d6d6d6;
+}
+
+.payment input {
+    width: 300px;
+    height: 70px;
+}
+
+/*    Payment Page Styling    */
+
+.cards {
+    display: block;
+}
+
+.credit input {
+    text-align: center;
+    width: 400px;
+    margin-left: 400px;
+}
+
+.credit {
+    text-align: center;
+}
+
+.credit h4 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.confirm input {
+    margin-top: 20px;
+}
+    
+.message p {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: justify;
+}
+/*    Account Create Page   */
+
+.details {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.details input {
+    text-align: center;
+    width: 500px;
+    margin-left: 350px;
+}
+
+/*    Footer Page Styling   */
+
+.footer {
+    margin-top: 100px;
+    background-color: #ff9900;
+}
+
+.gray_splash_footer {
+    margin-top: 20px;
+}
+
+.gray_splash_footer {
+    background-color: #ff9900;
+    border: none;
+}
+
+.gray_splash_footer h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.gray_splash_footer p {
+    font-size: 15px;
+}
+
+.gray_splash_footer p a {
+    color: white;
+}
+
+.gray_splash_footer p a:hover {
+    color: blue;
+}
+
+.copyright h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Override Mobile */
+@media print, screen and (max-width: 40em){
+    
+    .gray_splash {
+        width: 100%;
+    }
+    
+    .abc {
+        display: block;
+    }
+    
+    .abc img {
+        width: 15%;
+    }
+    
+    #search, .go-department {
+        margin-top: -50px;
+        margin-left: -40px;
+    }
+    
+    #search {
+        width: 200px;
+        margin-left: -30px;
+    }
+    
+    .go-department {
+        margin-top: -50px;
+        margin-left: 200px;
+        font-size: 20px;
+    }
+    
+    .go-login {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    
+    .go-cart {
+        margin-top: 15px;
+    }
+
+    .items h2 {
+        margin-left: 5px;
+        font-size: 20px;
+        margin-top: 5px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .slider img {
+        height: 100%;
+    }
+    
+    .heading h1 {
+        margin-top: -10px;
+    }
+    
+    .product1 img, .product2 img, .product3 img, .product4 img {
+        width: 40%;
+        margin-left: 105px;
+    }
+
+    .items .quantity {
+        display: flex;
+        flex-direction: row;
+        margin-left: 125px;
+        margin-top: 10px;
+    }
+
+    .items .quantity h3 {
+        height: 25px;
+        margin-left: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .items .quantity h5 {
+        height: 25px;
+    }
+
+    .items #cart {
+        font-size: 18px;
+    }
+    
+    .departments img {
+        margin-left: 8px;
+    }
+    
+    .departments p {
+        font-size: 15px;
+    }
+    
+/*    Main Page   */
+    
+    .crumble {
+        margin-top: 10px;
+    }
+    
+    .crumble p {
+        font-size: 14px;
+    }
+    
+    .depart h1 {
+        font-size: 20px;
+    }
+    
+    .depart .product2 img, .depart .product5 img, .depart .product8 img  {
+        margin-left: 105px;
+    }
+    
+    .depart .product6 img {
+        margin-left: 80px;
+    }
+    
+    .depart .product7 img {
+        margin-left: 95px;
+    }
+    
+/*    Cart Page   */
+
+    table {
+        margin-top: 50px;
+        width: 50%;
+        font-size: 10px;
+        margin-left: 5px;
+        border: 2px dotted lightgray;
+    }
+
+    tr {
+        border: 1px solid #000;
+    }
+    
+    #back {
+        margin-left: 1px;
+        margin-bottom: 20px;
+    }
+    
+/*    CheckOut Page   */
+    
+    .customerDetails {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    
+    .checkoutItems table {
+        width: 300px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    
+    .checkoutItems th {
+        border-right: 1px solid #000;
+    }
+    
+    .payment #back {
+        margin-top: -15px;
+    }
+    
+/*    Payment Page    */
+    
+    .cards input {
+        width: 300px;
+        margin-left: 30px;
+    }
+    
+    .message p {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+/*    Create Account */
+
+    .details {
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .details input {
+        text-align: center;
+        width: 300px;
+        margin-left: 30px;
+    }
+}
