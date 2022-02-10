@@ -4,8 +4,8 @@ body {
     0.92) 100%);
 }
 
-.logo {
-    width: 7%;
+.logo img {
+    width: 15%;
     margin-left: 100px;
     margin-top: 50px;
 }
@@ -23,7 +23,7 @@ body {
 
 #in, #up, #play {
     float: right;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-right: 70px;
 }
 
@@ -44,7 +44,7 @@ body {
     font-size: 20px;
     font-family: Alwyn 'New';
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 90px;
     color: #000;
     border-radius: 40px;
     box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
@@ -63,7 +63,7 @@ body {
     margin-left: 220px;
     color: #34e718;
     font-size: 24px;
-    margin-top: -30px;
+    margin-top: -15px;
     font-family: Alwyn 'New';
 }
 
@@ -71,12 +71,12 @@ body {
     font-size: 14px;
     color: #fff;
     margin-left:180px;
-    margin-top: -20px;
+    margin-top: -5px;
 }
 
 .prizeBag {
-    width: 30%;
-    margin-left: 150px;
+    width: 60%;
+    margin-left: 140px;
 }
 
 .one, .five, .ten, .hundred {
@@ -87,8 +87,8 @@ body {
     font-size: 14px;
 }
 
-.semiCircle, .dollars {
-    width: 10%;
+hr {
+    display: none;
 }
 
 fieldset {
@@ -101,8 +101,8 @@ h2 {
     font-size: 36px;
     color: #79E7FF;
     float: right;
-    margin-top: -850px;
-    margin-right: 350px;
+    margin-top: 130px;
+    margin-right: 300px;
 }
 
 label {
@@ -119,40 +119,40 @@ input, select {
 }
 
 .firstName, .lastName, .province, .email, .dob, .password {
-    margin-top: -760px;
-    margin-right: 550px;
+    margin-top: 30px;
+    margin-right: 520px;
 }
 
 .lastName {
-    margin-top: -700px;
-    margin-right: 555px;
+    margin-top: 2px;
 }
 
 .province {
-    margin-top: -500px;
-    margin-right: 570px;
+    margin-top: 2px;
+    margin-right: 540px;
 }
 
 .email {
-    margin-top: -600px;
-    margin-right: 595px;
+    margin-top: 2px;
+    margin-right: 570px;
 }
 
 .dob {
-    margin-top: -400px;
-    margin-right: 535px;
+    margin-top: 2px;
+    margin-right: 505px;
 }
 
 .password {
-    margin-top: -280px;
-    margin-right: 565px;
+    margin-top: 2px;
+    margin-right: 530px;
 }
 
 #firstName, #lastName, #province, #email, #password, #agree, #disagree {
     float: right;
-    width: 25%;
-    margin-top: -740px;
-    margin-right: 255px;
+    width: 50%;
+    margin-top: 5px;
+    margin-right: 245px;
+    color: #fff;
     font-family: Alwyn 'New';
     padding-left: 20px;
     background: none;
@@ -160,77 +160,58 @@ input, select {
     border-bottom: 2px solid #79E7FF;
 }
 
-#lastName {
-    margin-top: -660px;
-}
-
-#province {
-    width: 26%;
-    margin-top: -460px;
-    margin-right: 260px;
-}
-
 select:hover {
     color: #000;
 }
 
-#email {
-    margin-right: 260px;
-    margin-top: -560px;
-}
-
 #date, #month, #year {
-    width: 7%;
+    width: 15%;
     background: none;
     border: none;
     border-bottom: 2px solid #79E7FF;
     float: right;
     margin-left: 20px;
-    margin-right: 540px;
-    margin-top: -350px;
+    margin-right: 515px;
 }
 
 #month {
-    margin-right: 400px;
+    margin-top: -55px;
+    margin-right: 380px;
 }
 
 #year {
-    margin-right: 260px;
-}
-
-#password {
-    margin-top: -240px;
+    margin-top: -55px;
+    margin-right: 250px;
 }
 
 #agree, #disagree {
-    margin-top: -150px;
-    margin-right: 430px;
+    margin-top: 30px;
+    margin-right: 420px;
 }
 
 #disagree {
-    margin-top: -130px;
-    margin-right: 430px;
+    margin-top: -5px;
 }
 
 .agree, .disagree {
     float: right;
     font-family: Alwyn New;
     color: #ffffff;
-    margin-top: -154px;
+    margin-top: -35px;
 }
 
 .agree {
-    margin-right: 350px;
+    margin-right: 340px;
 }
 
 .disagree {
-    margin-top: -134px;
-    margin-right: 305px;
+    margin-top: -37px;
+    margin-right: 295px;
 }
 
 #formSubmit {
     float: right;
-    margin-top: -80px;
+    margin-top: 50px;
     margin-right: 250px;
     background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
     129.1%);
@@ -249,24 +230,151 @@ select:hover {
 .footer {
     width: 100%;
     height: 50px;
+    margin-top: 150px;
     background: #040B3A;
 }
 
-.sign {
+.terms {
+    display: flex;
+    color: #fff;
+    padding-left: 150px;
+    padding-top: 18px;
     font-family: Alwyn 'New';
     font-size: 14px;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 200px;
-    margin-top: 50px;
-    padding-top: 20px;
+    flex-direction: row;
 }
 
-span {
-    font-family: Alwyn 'New';
-    font-size: 14px;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 100px;
-    margin-top: -20px;
+.conditions {
+    margin-left: 50px;
+}
+
+
+/* Override Mobile */
+
+@media print, screen and (max-width: 40em){
+
+    .logo img{
+        width: 30%;
+        margin-top: 30px;
+        margin-left: 120px;
+    }
+
+    #in, #up, #play {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    #play {
+        height: 40px;
+        margin-top: 40px;
+        margin-right: 60px;
+    }
+
+    #in {
+        margin-left: 10px;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .brandName {
+        font-size: 40px;
+        margin-left: 35px;
+    }
+
+    .gameName {
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+
+    .prizeBag {
+        width: 50%;
+        margin-left: 90px;
+    }
+
+    .one, .five, .ten, .hundred {
+        line-height: 5px;
+        margin-left: 110px;
+    }
+
+    hr {
+        display: block;
+        width: 250px;
+        border: 2px solid #fd73ff;
+        margin-top: 10px;
+    }
+
+    h2 {
+        width: 200px;
+        font-size: 20px;
+        margin-top: 20px;
+        float: left;
+        margin-left: 80px;
+    }
+
+    .firstName, .lastName, .province, .email, .dob, .password {
+        float: left;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    #firstName, #lastName, #province, #email, #password {
+        width: 40%;
+        float: left;
+        margin-left: 60px;
+    }
+
+    #date, #month, #year {
+        width: 10%;
+        float: left;
+    }
+
+    #date {
+        margin-left: 60px;
+    }
+
+    #month {
+        margin-left: 150px;
+    }
+
+    #year {
+        margin-left: 240px;
+    }
+
+    #agree, #disagree {
+        float: left;
+        margin-left: -100px;
+    }
+    
+    .agree, .disagree {
+        font-size: 15px;
+        float: left;
+        margin-left: 80px;
+    }
+
+    #formSubmit {
+        float: left;
+        margin-left: 110px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .sign {
+        float: left;
+        margin-left: -80px;
+    }
+
+
 }
