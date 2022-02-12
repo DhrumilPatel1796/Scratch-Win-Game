@@ -44,9 +44,9 @@
                     </div>
                     <div class="large-6 small-12 secondPart">
                         <h2>Create an account</h2>
-                        <form action="#">
+                        <form id="bmd_form" action="#">
                             <fieldset>
-                                <label for="firstName" class="firstName">First Name</label><br>
+                                <label for="firstName" class="firstName">First Name</label>
                                 <input name="firstName" id="firstName" type="text">
                                 <p id="firstNameError"></p>
                             </fieldset>
@@ -81,19 +81,19 @@
                             </fieldset>
                             <fieldset>
                                 <label for="dob" class="dob">Date of Birth</label>
-                                <input name="Date of Birth" id="date" type="text" placeholder="Date">
+                                <input type="date" id="dob" name="dob">
+                                <!-- <input name="Date of Birth" id="date" type="text" placeholder="Date">
                                 <input name="Date of Birth" id="month" type="text" placeholder="Month">
-                                <input name="Date of Birth" id="year" type="text" placeholder="Year">
+                                <input name="Date of Birth" id="year" type="text" placeholder="Year"> -->
+                                <p id="dobError"></p>
                             </fieldset>
                             <fieldset>
-                                <p id="dobError"></p>
                                 <label for="password" class="password">Password</label>
-                                <input name="password" id="password" type="text">
+                                <input name="password" id="password" type="password">
                                 <p id="passwordError"></p>
                             </fieldset>
-                            <fieldset>
-                                <input type="radio" name="consent" id="agree"><p class="agree">I consent to the terms and conditions.</p><br>
-                                <input type="radio" name="consent" id="disagree"><p class="disagree">I do not consent to the terms and conditions.</p>
+                            <fieldset class="large-7 cell">
+                                <input id="bmd-consent" type="checkbox"><label id="bmd-consent-label" for="bmd-consent">I consent to the terms and conditions.</label>
                             </fieldset>
                             <input type="submit" value="Let Me Play!" id="formSubmit">
                         </form>

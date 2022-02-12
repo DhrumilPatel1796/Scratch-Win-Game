@@ -51,6 +51,17 @@ body {
 }
 
 /* LEFT PANEL: ADVERTISEMENT END */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: white;
+    opacity: 1;
+    background: url('images/calendar-days-solid.svg') no-repeat; /* Calendar icon for browsers like Edge and Chrome */
+    width: 1.3em;
+    height: 1.3em;
+    border-width: thin;
+    cursor: pointer;
+}
+
 .brandName {
     color: #ffffff;
     font-size: 3rem;
@@ -91,23 +102,24 @@ h2 {
 
 label {
     color: #fd73ff;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: Alwyn 'New';
-    font-weight: bold;
 }
 
 #province option {
-   background: rgba(24, 0, 88, 0.92)
+   background: rgba(24, 0, 88, 0.92);
 }
-
-
-#firstName, #lastName, #province, #email, #password, #agree, #disagree {
+#dob{
+    background: rgba(24, 0, 88, 0.92);
+}
+#bmd_form fieldset input, #province {
     width: 50%;
+    margin: 0;
     color: #fff;
     font-family: Alwyn 'New';
-    padding-left: 20px;
     border: none;
     border-bottom: 2px solid #79E7FF;
+    background: none;
 }
 
 select:hover {
@@ -119,14 +131,6 @@ select:hover {
     background: none;
     border: none;
     border-bottom: 2px solid #79E7FF;
-}
-
-
-
-.agree, .disagree {
-    font-family: Alwyn New;
-    color: #ffffff;
-
 }
 
 #formSubmit {
@@ -160,6 +164,14 @@ select:hover {
     flex-direction: row;
 }
 
+#bmd_form fieldset input#bmd-consent{
+    background: rgba(24, 0, 88, 0.92);
+    color: white;
+    width: auto; 
+}
+#bmd_form fieldset #bmd-consent-label{
+    color: white;
+}
 /* Medium and lower */
 
 @media only screen and (max-width: 40em) {
