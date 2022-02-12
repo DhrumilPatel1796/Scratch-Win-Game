@@ -1,13 +1,17 @@
+*{
+    padding: 5px;
+    font-size: 16px;
+}
+
 body {
     background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0,
     0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88,
     0.92) 100%);
 }
 
-.logo img {
-    width: 15%;
-    margin-left: 100px;
-    margin-top: 50px;
+#logo-container img {
+    max-width: 6rem;
+    max-height: 100%;     /* Constrain logo height to match parent's height */
 }
 
 .vertical {
@@ -20,35 +24,28 @@ body {
     222, 0.63) 0%, rgba(23, 172, 255, 0.12) 99.54%,
     rgba(81, 192, 255, 0) 99.99%);
 }
-
-#in, #up, #play {
-    float: right;
-    margin-top: 100px;
-    margin-right: 70px;
+#nav-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
 }
-
-#in, #up {
+#nav-buttons input{
     font-family: Alwyn 'New';
     border: none;
-    margin-left: 50px;
     background: none;
     color: #ffffff;
     font-size: 20px;
+    cursor: pointer;
 }
 
-#play {
+#nav-buttons #play {
     background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
     129.1%);
-    height: 50px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: Alwyn 'New';
-    font-weight: bold;
-    margin-top: 90px;
-    color: #000;
     border-radius: 40px;
     box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
-    mix-blend-mode: normal;;
+    mix-blend-mode: normal;
+    padding: 0.5em;
 }
 
 .brandName {
@@ -111,11 +108,6 @@ label {
     font-size: 20px;
     font-family: Alwyn 'New';
     font-weight: bold;
-}
-
-input, select {
-    color: #ffffff;
-    font-size: large;
 }
 
 .firstName, .lastName, .province, .email, .dob, .password {
@@ -251,34 +243,19 @@ select:hover {
 }
 
 
-/* Override Mobile */
+/* Medium and lower */
 
-@media print, screen and (max-width: 40em){
-
-    .logo img{
-        width: 30%;
-        margin-top: 30px;
-        margin-left: 120px;
+@media only screen and (max-width: 40em) {
+    #logo-container{
+        text-align: center;     /* Center logo on medium and lower screen sizes */
+        height: 5rem;
     }
-
-    #in, #up, #play {
+    #nav-buttons{
+        place-items: center;
         display: flex;
-        justify-content: space-between;
-        margin-top: 50px;
-        font-size: 15px;
-        margin-right: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    #play {
-        height: 40px;
-        margin-top: 40px;
-        margin-right: 60px;
-    }
-
-    #in {
-        margin-left: 10px;
-    }
-
     .vertical {
         display: none;
     }
