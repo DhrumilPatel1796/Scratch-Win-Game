@@ -131,6 +131,9 @@ input, select {
     margin-top: 2px;
     margin-right: 540px;
 }
+#province option {
+   background: rgba(24, 0, 88, 0.92)
+}
 
 .email {
     margin-top: 2px;
@@ -155,7 +158,6 @@ input, select {
     color: #fff;
     font-family: Alwyn 'New';
     padding-left: 20px;
-    background: none;
     border: none;
     border-bottom: 2px solid #79E7FF;
 }
