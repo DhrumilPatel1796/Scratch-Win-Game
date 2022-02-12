@@ -1,3 +1,7 @@
+*{
+    padding: 5px;
+    font-size: 16px;
+}
 
 body {
     background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0,
@@ -27,7 +31,6 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 1.5rem;
 }
 #nav-buttons input{
-    font-family: Alwyn 'New';
     border: none;
     background: none;
     color: #ffffff;
@@ -58,7 +61,10 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-direction: column;
     place-items: center;
+    text-align: center;
     color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #prizeBag {
     height: 50%;
@@ -69,6 +75,7 @@ h1, h2, h3, h4, h5, h6, p {
 #form-Panel{
     height: min-content;
     padding-left: 2rem;
+    padding-right: 2rem;
     border-width: 0;
     border-image: url('images/form_separator.svg') 1 stretch;
     border-style: solid;
@@ -84,41 +91,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-width: thin;
     cursor: pointer;
 }
-
+#bmd-form-title{
+    color: #79E7FF;
+    margin-bottom: 1rem;
+}
 #gameName {
     color: #34e718;
     font-size: 1.5rem;
-    font-family: Alwyn 'New';
-}
-#bmd-form-title{
-    margin-bottom: 1rem;
-}
-#bmd-description  {
-    font-size: 0.9rem;
-    color: #fff;
 }
 
 .bmd-prizes {
-    color: #fff;
-    font-family: 'New' Order;
-    font-size: 14px;
-}
-
-hr {
-    display: none;
-}
-
-h2 {
-    font-family: Alwyn 'New';
-    letter-spacing: 2px;
-    font-size: 36px;
-    color: #79E7FF;
+    font-size: 0.8rem;
 }
 
 label {
     color: #fd73ff;
     font-size: 1rem;
-    font-family: Alwyn 'New';
 }
 
 #province option {
@@ -132,19 +120,18 @@ label {
 }
 #bmd_form fieldset input, #province {
     width: 50%;
+    min-width: 15rem;
     max-height: 2rem;
     margin: 0;
     color: #fff;
-    font-family: Alwyn 'New';
     border: none;
     border-bottom: 2px solid #79E7FF;
     background: none;
 }
-
-select:hover {
-    color: #000;
+#bmd-consent-fieldset{
+    display: flex;
+    align-items: center;
 }
-
 
 #formSubmit {
     background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c 129.1%);
@@ -152,7 +139,6 @@ select:hover {
     padding: 0.6rem;
     font-size: 1rem;
     color: #000;
-    font-family: Alwyn 'New';
     font-weight: bold;
     border-radius: 40px;
     box-shadow: inset 0.3rem 0.25rem 0.3rem rgba(255, 255, 255, 0.25);
@@ -171,18 +157,10 @@ select:hover {
     background: #040B3A;
 }
 
-.terms {
-    display: flex;
-    color: #fff;
-    padding-left: 150px;
-    padding-top: 18px;
-    font-family: Alwyn 'New';
-    font-size: 14px;
-    flex-direction: row;
-}
-
 #bmd_form fieldset input#bmd-consent{
     background: rgba(24, 0, 88, 0.92);
+    min-width: 1rem;
+    max-width: 2rem;
     color: white;
     width: auto; 
     max-height: 2rem;
@@ -190,9 +168,13 @@ select:hover {
 #bmd_form fieldset #bmd-consent-label{
     color: white;
 }
-/* Medium and lower */
 
+/* Medium and lower */
 @media only screen and (max-width: 40em) {
+    #nav-logo {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     #logo-container{
         text-align: center;     /* Center logo on medium and lower screen sizes */
         height: 5rem;
@@ -211,5 +193,9 @@ select:hover {
     #prizeBag {
         height: 45%;
         max-height: 50vh;
+    }
+    #bmd_form fieldset input, #province {
+        width: 100%;
+        min-width: 5rem;
     }
 }
