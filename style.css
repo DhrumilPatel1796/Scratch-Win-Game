@@ -4,12 +4,22 @@ body {
     0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88,
     0.92) 100%);
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
 /* HEADER */
 #logo-container img {
     max-width: 6rem;
     max-height: 100%;     /* Constrain logo height to match parent's height */
 }
-
+#nav-logo{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 #nav-buttons{
     display: flex;
     align-items: center;
@@ -24,14 +34,22 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
 }
+#nav-buttons input:hover{
+  color:#34e718;
+}
 
 #nav-buttons #play {
-    background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
+    background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c
     129.1%);
     border-radius: 40px;
     box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
     mix-blend-mode: normal;
     padding: 0.5em;
+    color: black
+}
+#nav-buttons #play:hover {
+    background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8
+    129.1%);
 }
 /* HEADER END */
 
@@ -40,10 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     place-items: center;
-    border-width: 0;
-    border-image: url('images/form_separator.svg') 1 stretch;
-    border-style: solid;
-    border-right-width: 5px;
+    color: white;
 }
 #prizeBag {
     height: 50%;
@@ -51,7 +66,15 @@ body {
 }
 
 /* LEFT PANEL: ADVERTISEMENT END */
-
+#form-Panel{
+    height: min-content;
+    padding-left: 2rem;
+    border-width: 0;
+    border-image: url('images/form_separator.svg') 1 stretch;
+    border-style: solid;
+    border-left-width: 5px;
+    color: white;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: white;
     opacity: 1;
@@ -62,24 +85,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-.brandName {
-    color: #ffffff;
-    font-size: 3rem;
-    font-family: Alwyn 'New';
-}
-
-.gameName {
+#gameName {
     color: #34e718;
     font-size: 1.5rem;
     font-family: Alwyn 'New';
 }
-
-.description {
+#bmd-form-title{
+    margin-bottom: 1rem;
+}
+#bmd-description  {
     font-size: 0.9rem;
     color: #fff;
 }
 
-.one, .five, .ten, .hundred {
+.bmd-prizes {
     color: #fff;
     font-family: 'New' Order;
     font-size: 14px;
@@ -87,10 +106,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 hr {
     display: none;
-}
-
-fieldset {
-    border: none;
 }
 
 h2 {
@@ -112,8 +127,12 @@ label {
 #dob{
     background: rgba(24, 0, 88, 0.92);
 }
+#bmd_form fieldset{
+    margin-bottom: 0.5rem;
+}
 #bmd_form fieldset input, #province {
     width: 50%;
+    max-height: 2rem;
     margin: 0;
     color: #fff;
     font-family: Alwyn 'New';
@@ -126,26 +145,24 @@ select:hover {
     color: #000;
 }
 
-#date, #month, #year {
-    width: 15%;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #79E7FF;
-}
 
 #formSubmit {
-    background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
-    129.1%);
-    height: 50px;
-    padding: 10px;
-    font-size: 20px;
+    background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c 129.1%);
+    height: 3rem;
+    padding: 0.6rem;
+    font-size: 1rem;
     color: #000;
     font-family: Alwyn 'New';
     font-weight: bold;
     border-radius: 40px;
-    box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0.3rem 0.25rem 0.3rem rgba(255, 255, 255, 0.25);
     mix-blend-mode: normal;
     cursor: pointer;
+    margin-top: 1rem;
+}
+
+#formSubmit:hover {
+    background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8 129.1%);
 }
 
 .footer {
@@ -168,6 +185,7 @@ select:hover {
     background: rgba(24, 0, 88, 0.92);
     color: white;
     width: auto; 
+    max-height: 2rem;
 }
 #bmd_form fieldset #bmd-consent-label{
     color: white;
@@ -185,7 +203,7 @@ select:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
-    #advertisement-Panel{
+    #form-Panel{
         border-width: 0; /* Remove separator on smaller screens */
         border-image: none;
     }
