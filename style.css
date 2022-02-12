@@ -10,16 +10,6 @@ body {
     max-height: 100%;     /* Constrain logo height to match parent's height */
 }
 
-.vertical {
-    position: absolute;
-    width: 6px;
-    height: 950px;
-    left: 781px;
-    top: 300px;
-    background: linear-gradient(180deg, rgba(70, 255,
-    222, 0.63) 0%, rgba(23, 172, 255, 0.12) 99.54%,
-    rgba(81, 192, 255, 0) 99.99%);
-}
 #nav-buttons{
     display: flex;
     align-items: center;
@@ -50,6 +40,10 @@ body {
     display: flex;
     flex-direction: column;
     place-items: center;
+    border-width: 0;
+    border-image: url('images/form_separator.svg') 1 stretch;
+    border-style: solid;
+    border-right-width: 5px;
 }
 #prizeBag {
     height: 50%;
@@ -102,40 +96,13 @@ label {
     font-weight: bold;
 }
 
-.firstName, .lastName, .province, .email, .dob, .password {
-}
-
-.lastName {
-    margin-top: 2px;
-}
-
-.province {
-    margin-top: 2px;
-    margin-right: 540px;
-}
 #province option {
    background: rgba(24, 0, 88, 0.92)
 }
 
-.email {
-    margin-top: 2px;
-    margin-right: 570px;
-}
-
-.dob {
-    margin-top: 2px;
-    margin-right: 505px;
-}
-
-.password {
-    margin-top: 2px;
-    margin-right: 530px;
-}
 
 #firstName, #lastName, #province, #email, #password, #agree, #disagree {
     width: 50%;
-    margin-top: 5px;
-    margin-right: 245px;
     color: #fff;
     font-family: Alwyn 'New';
     padding-left: 20px;
@@ -152,47 +119,17 @@ select:hover {
     background: none;
     border: none;
     border-bottom: 2px solid #79E7FF;
-    margin-left: 20px;
-    margin-right: 515px;
 }
 
-#month {
-    margin-top: -55px;
-    margin-right: 380px;
-}
 
-#year {
-    margin-top: -55px;
-    margin-right: 250px;
-}
-
-#agree, #disagree {
-    margin-top: 30px;
-    margin-right: 420px;
-}
-
-#disagree {
-    margin-top: -5px;
-}
 
 .agree, .disagree {
     font-family: Alwyn New;
     color: #ffffff;
-    margin-top: -35px;
-}
 
-.agree {
-    margin-right: 340px;
-}
-
-.disagree {
-    margin-top: -37px;
-    margin-right: 295px;
 }
 
 #formSubmit {
-    margin-top: 50px;
-    margin-right: 250px;
     background:  linear-gradient(180deg, #35F3FF 0%, #6FFF82
     129.1%);
     height: 50px;
@@ -210,7 +147,6 @@ select:hover {
 .footer {
     width: 100%;
     height: 50px;
-    margin-top: 150px;
     background: #040B3A;
 }
 
@@ -223,11 +159,6 @@ select:hover {
     font-size: 14px;
     flex-direction: row;
 }
-
-.conditions {
-    margin-left: 50px;
-}
-
 
 /* Medium and lower */
 
@@ -242,8 +173,9 @@ select:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .vertical {
-        display: none;
+    #advertisement-Panel{
+        border-width: 0; /* Remove separator on smaller screens */
+        border-image: none;
     }
 
     #prizeBag {
