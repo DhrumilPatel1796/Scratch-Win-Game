@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5, h6{
     padding: 5px;
 }
 /* HEADER */
+#logo-container{
+    margin-bottom: 1rem;
+}
 #logo-container img {
     max-width: 6rem;
     max-height: 100%;     /*Constrain logo height to match parent's height*/
@@ -29,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 #nav-buttons{
     display: flex;
@@ -224,6 +227,9 @@ footer{
     #prizeBag {
         height: 45%;
         max-height: 50vh;
+    }
+    .bmd-prizes {
+        font-size: 1rem;
     }
     #bmd_form fieldset input, #province {
         width: 100%;
