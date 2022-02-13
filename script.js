@@ -101,10 +101,10 @@ let initForm = function() {
     fieldsCheck = [
         {field: firstName, checker: isNotEmpty, error: firstNameError, msg: "Please enter your firstname."},
         {field: lastname, checker: isNotEmpty, error: lastnameError, msg: "Please enter your lastname."},
-        {field: province, checker: isValidProvince, error: provinceError, msg: "Please enter a valid location."},
-        {field: email, checker: isValidEmail, error: emailError, msg: "Please enter a valid email."},
-        {field: dob, checker: isValidDate, error: dobError, msg: "Please enter a valid date"},
-        {field: bmdConsent, checker: hasUserAcceptedTerms, error: bmdConsentError, msg: "Please accept the terms before proceeding."},
+        {field: province, checker: isValidProvince, error: provinceError, msg: "Must select a valid provinc."},
+        {field: email, checker: isValidEmail, error: emailError, msg: ">Must be a valid email address."},
+        {field: dob, checker: isValidDate, error: dobError, msg: "Must enter a valid date of birth."},
+        {field: bmdConsent, checker: hasUserAcceptedTerms, error: bmdConsentError, msg: "Please consent to terms and conditions."},
         {field: password, checker: isValidPassword, error: passwordError, msg: "Password required lowercase, uppercase, numbers, symbols, and at least 8 characters. "}
     ];
 
