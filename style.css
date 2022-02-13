@@ -152,12 +152,6 @@ label {
     background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8 129.1%);
 }
 
-.footer {
-    width: 100%;
-    height: 50px;
-    background: #040B3A;
-}
-
 #bmd_form fieldset input#bmd-consent{
     background: rgba(24, 0, 88, 0.92);
     min-width: 1rem;
@@ -169,22 +163,32 @@ label {
 #bmd_form fieldset #bmd-consent-label{
     color: white;
 }
+
 footer{
     display: flex;
     align-items: center;
+    width: 100%;
+    background: #040B3A;
+    margin-top: 3rem;
+    padding: 1rem 10% 1rem 10%;
 }
 .footer-container{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
-#footer-links{
+#footer-links, #footer-social{
     display: flex;
     gap: 2rem;
 }
-#footer-links a{
+#footer-social{
+    justify-content:right;
+}
+#footer-links a, #footer-social a{
     text-decoration: none;
     color: white;
 }
-#footer-links a:hover{
+#footer-links a:hover, #footer-social a:hover{
     color: #34e718;
 }
 /* Medium and lower */
@@ -215,5 +219,14 @@ footer{
     #bmd_form fieldset input, #province {
         width: 100%;
         min-width: 5rem;
+    }
+    #footer-links{
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+    #footer-social{
+        flex-direction: row;
+        gap: 1rem;
+        justify-self: unset;
     }
 }
