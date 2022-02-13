@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6{
 /* HEADER */
 #logo-container img {
     max-width: 6rem;
-    max-height: 100%;     /* Constrain logo height to match parent's height */
+    max-height: 100%;     /*Constrain logo height to match parent's height*/
 }
 #nav-logo{
     padding-left: 10%;
