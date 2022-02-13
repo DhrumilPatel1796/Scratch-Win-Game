@@ -89,6 +89,9 @@ h1, h2, h3, h4, h5, h6{
     border-left-width: 5px;
     color: white;
 }
+.bmd-error{
+    color: red;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: white;
     opacity: 1;

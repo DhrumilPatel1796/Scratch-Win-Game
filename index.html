@@ -51,12 +51,12 @@
                             <fieldset>
                                 <label for="firstName" class="firstName">First Name</label>
                                 <input name="firstName" id="firstName" type="text">
-                                <p id="firstNameError"></p>
+                                <p class="bmd-error" id="firstNameError"></p>
                             </fieldset>
                             <fieldset>
                                 <label for="lastName" class="lastName">Last Name</label>
                                 <input name="lastName" id="lastName" type="text">
-                                <p id="lastNameError"></p>
+                                <p class="bmd-error" id="lastNameError"></p>
                             </fieldset>
                             <fieldset>
                                 <label for="province" class="province">Province</label>
@@ -75,12 +75,12 @@
                                     <option value="SK">Saskatchewan</option>
                                     <option value="YK">Yukon</option>
                                 </select>
-                                <p id="provinceError"></p>
+                                <p class="bmd-error" id="provinceError"></p>
                             </fieldset>
                             <fieldset>
                                 <label for="email" class="email">Email</label>
                                 <input name="email" id="email" type="text">
-                                <p id="emailError"></p>
+                                <p class="bmd-error" id="emailError"></p>
                             </fieldset>
                             <fieldset>
                                 <label for="dob" class="dob">Date of Birth</label>
@@ -88,16 +88,17 @@
                                 <!-- <input name="Date of Birth" id="date" type="text" placeholder="Date">
                                 <input name="Date of Birth" id="month" type="text" placeholder="Month">
                                 <input name="Date of Birth" id="year" type="text" placeholder="Year"> -->
-                                <p id="dobError"></p>
+                                <p class="bmd-error" id="dobError"></p>
                             </fieldset>
                             <fieldset>
                                 <label for="password" class="password">Password</label>
                                 <input name="password" id="password" type="password">
-                                <p id="passwordError"></p>
+                                <p class="bmd-error" id="passwordError"></p>
                             </fieldset>
                             <fieldset id="bmd-consent-fieldset" class="large-7 cell">
                                 <input id="bmd-consent" type="checkbox"><label id="bmd-consent-label" for="bmd-consent">I consent to the terms and conditions.</label>
                             </fieldset>
+                            <p class="bmd-error" id="bmdConsentError"></p>
                             <input type="submit" value="Let Me Play!" id="formSubmit">
                         </form>
                     </div>
