@@ -1,17 +1,18 @@
 *{
-    padding: 5px;
     font-size: 16px;
 }
 
 body {
-    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0,
-    0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88,
-    0.92) 100%);
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88, 0.92) 100%);
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+}
+#main{
+    padding: 5px;
 }
 /* HEADER */
 #logo-container img {
@@ -168,7 +169,24 @@ label {
 #bmd_form fieldset #bmd-consent-label{
     color: white;
 }
-
+footer{
+    display: flex;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+}
+#footer-links{
+    display: flex;
+    gap: 2rem;
+}
+#footer-links a{
+    text-decoration: none;
+    color: white;
+}
+#footer-links a:hover{
+    color: #34e718;
+}
 /* Medium and lower */
 @media only screen and (max-width: 40em) {
     #nav-logo {
