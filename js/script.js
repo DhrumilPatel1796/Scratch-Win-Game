@@ -20,7 +20,7 @@ let isValidEmail = function(userInput) {
     // _.!#$%^&*()?~+   ==>  Matches all those symbols.
     // +   ===============> Matches all the previous rules one or unlimited times.
     // @  ================> Matches the @
-    // Then it is the anytext (did not include symbols) FOLLOWED by a dot ( \.  ), and whatever for the TLD.
+    // Then it is the any text (did not include symbols) FOLLOWED by a dot ( \.  ), and whatever for the TLD.
 
     //The regex above is still too restrictive as basically any character from any character is allowed on email addresses. But it checks for a basic part1@part2.part3 pattern.
     if (pattern.test(userInput.field.value.trim())){
@@ -102,10 +102,10 @@ let initForm = function() {
         {field: firstName, checker: isNotEmpty, error: firstNameError, msg: "Please enter your firstname."},
         {field: lastname, checker: isNotEmpty, error: lastnameError, msg: "Please enter your lastname."},
         {field: province, checker: isValidProvince, error: provinceError, msg: "Must select a valid provinc."},
-        {field: email, checker: isValidEmail, error: emailError, msg: ">Must be a valid email address."},
+        {field: email, checker: isValidEmail, error: emailError, msg: "Must be a valid email address."},
         {field: dob, checker: isValidDate, error: dobError, msg: "Must enter a valid date of birth."},
         {field: bmdConsent, checker: hasUserAcceptedTerms, error: bmdConsentError, msg: "Please consent to terms and conditions."},
-        {field: password, checker: isValidPassword, error: passwordError, msg: "Password required lowercase, uppercase, numbers, symbols, and at least 8 characters. "}
+        {field: password, checker: isValidPassword, error: passwordError, msg: "Password requires lowercase, uppercase, numbers, symbols, and at least 8 characters. "}
     ];
 
     let formSubmit = document.querySelector("#formSubmit");
