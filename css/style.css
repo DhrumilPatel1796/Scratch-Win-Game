@@ -1,0 +1,240 @@
+*{
+    font-size: 16px;
+    font-family: new-order, sans-serif , 'Helvetica Neue', Helvetica, Arial, sans;
+}
+
+body {
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #030E46 0%, rgba(24, 0, 88, 0.92) 100%);
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-family: alwyn-new-rounded-web, 'Helvetica Neue', Helvetica, Arial, sans;
+}
+#main{
+    padding: 5px;
+}
+/* HEADER */
+#logo-container img {
+    max-width: 6rem;
+    max-height: 100%;     /*Constrain logo height to match parent's height*/
+}
+#nav-logo{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#nav-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+}
+#nav-buttons input{
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#nav-buttons input:hover{
+  color:#34e718;
+}
+
+#nav-buttons #play {
+    background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c
+    129.1%);
+    border-radius: 40px;
+    box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;
+    padding: 0.5em;
+    color: black
+}
+#nav-buttons #play:hover {
+    background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8
+    129.1%);
+}
+/* HEADER END */
+
+/* LEFT PANEL: ADVERTISEMENT */
+#advertisement-Panel{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#prizeBag {
+    height: 50%;
+    max-height: 60vh;
+}
+
+/* LEFT PANEL: ADVERTISEMENT END */
+#form-Panel{
+    height: min-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-width: 0;
+    border-image: url('images/form_separator.svg') 1 stretch;
+    border-style: solid;
+    border-left-width: 5px;
+    color: white;
+}
+.bmd-error{
+    color: red;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: white;
+    opacity: 1;
+    background: url('images/calendar-days-solid.svg') no-repeat; /* Calendar icon for browsers like Edge and Chrome */
+    width: 1.3em;
+    height: 1.3em;
+    border-width: thin;
+    cursor: pointer;
+}
+#bmd-form-title{
+    color: #79E7FF;
+    margin-bottom: 1rem;
+}
+#gameName {
+    color: #34e718;
+    font-size: 1.5rem;
+}
+
+.bmd-prizes {
+    font-size: 0.8rem;
+}
+
+label {
+    color: #fd73ff;
+    font-size: 1rem;
+}
+
+#province option {
+   background: rgba(24, 0, 88, 0.92);
+}
+#dob{
+    background: rgba(24, 0, 88, 0.92);
+}
+#bmd_form fieldset{
+    margin-bottom: 0.5rem;
+}
+#bmd_form fieldset input, #province {
+    width: 50%;
+    min-width: 15rem;
+    max-height: 2rem;
+    margin: 0;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #79E7FF;
+    background: none;
+}
+#bmd-consent-fieldset{
+    display: flex;
+    align-items: center;
+}
+
+#formSubmit {
+    background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c 129.1%);
+    height: 3rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    border-radius: 40px;
+    mix-blend-mode: normal;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#formSubmit:hover {
+    background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8 129.1%);
+}
+
+#bmd_form fieldset input#bmd-consent{
+    background: rgba(24, 0, 88, 0.92);
+    min-width: 1rem;
+    max-width: 2rem;
+    color: white;
+    width: auto; 
+    max-height: 2rem;
+}
+#bmd_form fieldset #bmd-consent-label{
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #040B3A;
+    margin-top: 3rem;
+    padding: 1rem 10% 1rem 10%;
+}
+.footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#footer-links, #footer-social{
+    display: flex;
+    gap: 2rem;
+}
+#footer-social{
+    justify-content:right;
+}
+#footer-links a, #footer-social a{
+    text-decoration: none;
+    color: white;
+}
+#footer-links a:hover, #footer-social a:hover{
+    color: #34e718;
+}
+/* Medium and lower */
+@media only screen and (max-width: 40em) {
+    #nav-logo {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #logo-container{
+        text-align: center;     /* Center logo on medium and lower screen sizes */
+        height: 5rem;
+    }
+    #nav-buttons{
+        place-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #form-Panel{
+        border-width: 0; /* Remove separator on smaller screens */
+        border-image: none;
+    }
+
+    #prizeBag {
+        height: 45%;
+        max-height: 50vh;
+    }
+    #bmd_form fieldset input, #province {
+        width: 100%;
+        min-width: 5rem;
+    }
+    #footer-links{
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+    #footer-social{
+        flex-direction: row;
+        gap: 1rem;
+        justify-self: unset;
+    }
+}
