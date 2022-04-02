@@ -1,3 +1,9 @@
+*{
+  font-size: 16px;
+  /* TODO: Import fonts? */
+  font-family: new-order, sans-serif , 'Helvetica Neue', Helvetica, Arial, sans;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -60,7 +66,55 @@ code {
 .button a {
   color: #02041C;
 }
+#main{
+  padding: 5px;
+}
+/* HEADER */
+#logo-container img {
+  max-width: 6rem;
+  max-height: 100%;     /*Constrain logo height to match parent's height*/
+}
+#nav-logo{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#nav-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+}
+#nav-buttons input{
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#nav-buttons input:hover{
+color:#34e718;
+}
 
+#nav-buttons #play {
+  background:  linear-gradient(180deg, #35F3FF 0%, #2fe99c
+  129.1%);
+  border-radius: 40px;
+  box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
+  mix-blend-mode: normal;
+  padding: 0.5em;
+  color: black
+}
+
+#nav-buttons #play {
+  padding-top: 15px;
+}
+
+#nav-buttons #play:hover {
+  background:  linear-gradient(180deg, #35F3FF 0%, #6ffff8
+  129.1%);
+}
 
 /* RESULTS PAGE */
 /* user lost */
