@@ -12,6 +12,7 @@ const UserWon = () => {
                 </p>
                 <input type='submit' className='button' id='submit' value='Submit'></input>
             </aside>
+            <p>You will receive your BMDs in the next 6-8 weeks</p>
         </article>
     )
 };
