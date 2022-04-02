@@ -11,7 +11,7 @@ class ResultsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            win: false
+            win: true
         };
     }
 
