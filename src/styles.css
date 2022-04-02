@@ -8,6 +8,7 @@ body {
   background: linear-gradient(347.54deg, #02041C 61.41%, #2A1A8A 99.64%);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   height: 100%;
   box-sizing: border-box;
   padding: 2rem;
