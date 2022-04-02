@@ -36,6 +36,10 @@ h3 {
   color: #79E7FF;
 }
 
+.green-text {
+  color: #3be052;
+}
+
 img {
   height:fit-content;
 }
@@ -43,6 +47,16 @@ img {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+
+.logo {
+  width: 6rem;
 }
 
 .scratch-card {

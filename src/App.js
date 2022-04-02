@@ -19,9 +19,10 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    
+    <BrowserRouter> 
     <Routes>
-      <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Navbar />}>
         <Route index element={<HomePage/>} />
         <Route path="form" element={<FormPage />} />
         <Route path="legal" element={<LegalPage/>} />
@@ -31,6 +32,8 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
+  
+  
   );
 }
 

@@ -4,7 +4,7 @@ const navbar = () => {
         <>
             <header id="nav-logo">
                 <section id="logo-container" class="large-3 medium-4 small-12 cell logo">
-                    <a href="/"><img class="logo" src="./images/logo.svg" /></a>
+                    <a href="/"><img class="logo" src={require('../images/png/logo.png')}/></a>
                 </section>
                 <nav id="nav-buttons" class="large-9 medium-8 small-12">
                 <Link to="/"><input type="button" value="Home" id=""></input></Link>
@@ -15,6 +15,7 @@ const navbar = () => {
                 </nav>
             </header>
         <Outlet />
+        
     </>
     )
 };
