@@ -10,7 +10,7 @@ const UserWon = () => {
                     <label htmlFor='math'>2 + 2 =</label>
                     <input type='number' name='math' id='math'></input>
                 </p>
-                <input type='submit' className='submit' id='submit' value='Submit'></input>
+                <input type='submit' className='button' id='submit' value='Submit'></input>
             </aside>
         </article>
     )

@@ -18,3 +18,10 @@ code {
   border-width: 5px;
   border-image-source: linear-gradient(to left, #79E7FF, #FD73FF );
 }
+
+.button {
+  background-color: #3be052;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
