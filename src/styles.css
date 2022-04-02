@@ -17,6 +17,10 @@ p, h1, li, a {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2, h4 {
   color: #FD73FF;
 }
@@ -46,6 +50,10 @@ code {
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
+}
+
+.button a {
+  color: #02041C;
 }
 
 
