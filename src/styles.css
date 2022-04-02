@@ -9,6 +9,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  box-sizing: border-box;
+  padding: 2rem;
 }
 
 p, h1, li, a {
@@ -21,6 +23,10 @@ h2, h4 {
 
 h3 {
   color: #79E7FF;
+}
+
+img {
+  height:fit-content;
 }
 
 code {
@@ -45,8 +51,43 @@ code {
 
 /* RESULTS PAGE */
 /* user lost */
+.result-message {
+  text-align: center;
+}
 .coupon {
   background-image: url('./images/svg/card-glass.svg');
   background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  max-width: 350px;
+  min-height: 250px; 
+  margin: 2rem auto;
   padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.coupon h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 1rem 0;
+}
+
+
+.sponsors {
+  background-image: url('./images/svg/card-glass.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.sponsors h3 {
+  margin-top: 0;
+}
+.sponsors-container {
+  display: flex;
+  justify-content: space-between;
 }

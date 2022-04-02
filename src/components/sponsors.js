@@ -2,7 +2,7 @@ import '../styles.css';
 
 const Sponsors = () => {
     return (
-        <article>
+        <article className='sponsors'>
             <h3>Check Out Our Sponsors</h3>
             <div className='sponsors-container'>
                 <img src={require('../images/png/logo-taco-superstore.png')} />
