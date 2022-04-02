@@ -5,6 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(347.54deg, #02041C 61.41%, #2A1A8A 99.64%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+p, h1, li, a {
+  color: #fff;
+}
+
+h2, h4 {
+  color: #FD73FF;
+}
+
+h3 {
+  color: #79E7FF;
 }
 
 code {
@@ -24,4 +40,13 @@ code {
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
+}
+
+
+/* RESULTS PAGE */
+/* user lost */
+.coupon {
+  background-image: url('./images/svg/card-glass.svg');
+  background-repeat: no-repeat;
+  padding: 1rem;
 }
