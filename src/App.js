@@ -31,8 +31,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
-  </BrowserRouter>
-  
+  </BrowserRouter>  
   
   );
 }

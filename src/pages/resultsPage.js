@@ -11,7 +11,7 @@ class ResultsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            win: false
+            win: true
         };
     }
 
@@ -20,7 +20,6 @@ class ResultsPage extends React.Component {
         return (
             <main>
                 <ContestHeader />
-                <h1>I am the results page 🥳</h1>
                 <ScratchCard />
                 {didUserWin
                     ? <UserWon />

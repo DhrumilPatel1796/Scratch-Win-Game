@@ -36,7 +36,7 @@ h3 {
   color: #79E7FF;
 }
 
-.green-text {
+.green-text, h5 {
   color: #3be052;
 }
 
@@ -144,6 +144,10 @@ color:#34e718;
   font-size: 3rem;
   line-height: 3rem;
   margin: 1rem 0;
+}
+
+label {
+  color: #fff;
 }
 
 
