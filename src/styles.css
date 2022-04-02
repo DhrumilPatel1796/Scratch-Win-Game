@@ -89,6 +89,7 @@ code {
   align-items: center;
   justify-content: end;
   gap: 1.5rem;
+  margin-left: auto;
 }
 #nav-buttons input{
   border: none;
