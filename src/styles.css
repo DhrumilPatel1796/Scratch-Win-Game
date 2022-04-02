@@ -60,13 +60,6 @@ code {
   color: #02041C;
 }
 
-.playBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
 
 /* RESULTS PAGE */
 /* user lost */
@@ -109,4 +102,14 @@ code {
 .sponsors-container {
   display: flex;
   justify-content: space-between;
+}
+
+
+/* Legal Page Styles */
+
+.playBtn-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
