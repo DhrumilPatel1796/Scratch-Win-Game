@@ -4,7 +4,9 @@ import '../styles.css';
 
 const PlayToWinBtn = () => {
     return(
-        <button className='button' > <Link to="/contest">Contest</Link> </button>
+        <article  className='playBtn'>
+            <button className='button' > <Link to="/contest">Play To Win</Link> </button>
+        </article>
     )
 }
 
