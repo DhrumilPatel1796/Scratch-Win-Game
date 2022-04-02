@@ -14,6 +14,10 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Navbar from "./components/navbar";
 
 function App() {
+
+  const [win, setWin] = useState(false);
+
+
   return (
     <BrowserRouter>
     <Routes>
@@ -22,7 +26,7 @@ function App() {
         <Route path="form" element={<FormPage />} />
         <Route path="legal" element={<LegalPage/>} />
         <Route path="results" element={<ResultsPage />} />
-        <Route path="contestPage" element={<ContestPage />} />
+        <Route path="contest" element={<ContestPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
