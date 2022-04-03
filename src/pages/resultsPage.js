@@ -11,21 +11,25 @@ class ResultsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            win: true
+            win: false
         };
     }
 
     render() {
         const didUserWin = this.state.win;
         return (
-            <main>
-                <ContestHeader />
-                <ScratchCard />
-                {didUserWin
-                    ? <UserWon />
-                    : <UserLost />
-                }
-                <Sponsors />
+            <main className="grid-x grid-padding-x">
+                <section className='cell large-10 medium-10 small-12'>   
+                    <ContestHeader />
+                    <ScratchCard />
+                    <article className="grid-x grid-padding-x">
+                        {didUserWin
+                            ? <UserWon />
+                            : <UserLost />
+                        }
+                    </article>
+                    <Sponsors />
+                </section>
             </main>
         );
     }

@@ -21,6 +21,11 @@ body {
   letter-spacing: 0.05rem;
 }
 
+main {
+  margin: 0 auto;
+  justify-content: center;
+}
+
 /* Font Styling */
 h1 {
   font-family: alwyn-new-rounded-web, sans-serif;
@@ -387,26 +392,46 @@ footer {
 .result-message {
   text-align: center;
 }
+.result-instructions {
+  margin: 1rem 0;
+}
+.user-won {
+  margin: 0 auto;
+  text-align: center;
+}
 .coupon {
-  background-image: url("./images/svg/card-glass.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  max-width: 350px;
-  min-height: 250px;
   margin: 2rem auto;
-  padding: 1rem;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
   text-align: right;
 }
-.coupon h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  margin: 1rem 0;
+.puzzle {
+  background-image: url('./images/svg/card-glass.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  /* display: flex;
+  flex-flow: column;
+  justify-content: center; */
 }
-
+.puzzle p {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.puzzle label {
+  padding: 0.2rem 0.5rem;
+}
+#math {
+  max-width: 5rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #34e718;
+  color: #fff;
+  padding: 0rem 0.5rem ;
+}
 label {
   color: #fff;
 }
@@ -426,6 +451,7 @@ label {
 .sponsors-container {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 /* Legal Page Styles */
