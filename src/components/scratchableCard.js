@@ -119,38 +119,67 @@ let prizeCard = `<?xml version="1.0" encoding="utf-8"?>
 </svg>
 `
 
-const ScratchableCard = () => {
-    useEffect(() => {
-        const scContainer = document.getElementById('js--sc--container')
-const scInfos = document.querySelector('.sc__infos');
-const sc = new ScratchCard('#js--sc--container', {
-  scratchType: SCRATCH_TYPE.BRUSH,
-  containerWidth: scContainer.offsetWidth,
-  containerHeight: scContainer.offsetWidth/2.53,
-  brushSrc: brush,
-  imageForwardSrc: couponCover,
-  htmlBackground: `<div id="the_card">${prizeCard}</div>`,
-  clearZoneRadius: 0,
-  nPoints: 30,
-  pointSize: 4,
-  callback: function () {
-    alert('Now the window will reload !')
-    window.location.reload()
-  }
-});
 
-// Init
-sc.init().then(() => {
-  sc.canvas.addEventListener('scratch.move', () => {
-    let percent = sc.getPercent().toFixed(0);
-    scInfos.innerHTML = percent + '%';
-    console.log(percent)
-  })
-}).catch((error) => {
-  // image not loaded
-  alert(error.message);
-});
-     });
+
+const ScratchableCard = () => {
+    let scContainer = document.getElementById('js--sc--container')
+    let scInfos = document.querySelector('.sc__infos');
+    let sc;
+    useEffect(() => {
+        scContainer = document.getElementById('js--sc--container')
+        scInfos = document.querySelector('.sc__infos');
+        sc = new ScratchCard('#js--sc--container', {
+            scratchType: SCRATCH_TYPE.BRUSH,
+            containerWidth: scContainer.offsetWidth,
+            containerHeight: scContainer.offsetWidth/2.53,
+            brushSrc: brush,
+            imageForwardSrc: couponCover,
+            htmlBackground: `<div id="the_card">${prizeCard}</div>`,
+            clearZoneRadius: 0,
+            nPoints: 30,
+            pointSize: 4,
+        callback: function () {
+            alert('Now the window will reload !')
+            window.location.reload()
+            }
+        });
+
+        function handleResize() {
+            document.getElementById('js--sc--container').innerHTML = '';
+            sc = new ScratchCard('#js--sc--container', {
+                scratchType: SCRATCH_TYPE.BRUSH,
+                containerWidth: scContainer.offsetWidth,
+                containerHeight: scContainer.offsetWidth/2.53,
+                brushSrc: brush,
+                imageForwardSrc: couponCover,
+                htmlBackground: `<div id="the_card">${prizeCard}</div>`,
+                clearZoneRadius: 0,
+                nPoints: 30,
+                pointSize: 4,
+                callback: function () {
+                  alert('Now the window will reload !')
+                  window.location.reload()
+                }
+              });
+              initScratchCard();
+        }
+        initScratchCard();
+        window.addEventListener('resize', handleResize)
+
+    function initScratchCard(){
+        // Init
+        sc.init().then(() => {
+            sc.canvas.addEventListener('scratch.move', () => {
+                let percent = sc.getPercent().toFixed(0);
+                scInfos.innerHTML = percent + '%';
+                console.log(percent)
+            })
+            })
+                .catch((error) => {
+                    alert(error.message);
+                });
+            }
+    });
     
     return (
          <article className='the-scratch-card'>
