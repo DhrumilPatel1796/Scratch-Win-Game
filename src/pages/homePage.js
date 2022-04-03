@@ -1,13 +1,12 @@
 import "../styles.css";
-import moneybag from "../images/svg/money-bag.svg";
+import moneybag from "../images/png/new-moneybag.png";
 import coingroup from "../images/svg/coin-group.svg";
 import formicon from "../images/svg/icon-form.svg";
 import ticketicon from "../images/svg/icon-ticket.svg";
 import trophyicon from "../images/svg/icon-trophy.svg";
-import freshkicks from "../images/png/logo-fresh-kicks.png";
-import glorbotronic from "../images/png/logo-glorbotronic-burgers.png";
-import rcoas from "../images/png/logo-raw-cabbage-on-a-stick-hut.png";
-import tacosuperstore from "../images/png/logo-taco-superstore.png";
+import Sponsors from "../components/sponsors";
+import ContestFooter from "../components/contestFooter";
+
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -29,7 +28,7 @@ const HomePage = () => {
             ></input>
           </Link>
         </div>
-        <div className="large-6 medium-6 small-12 cell">
+        <div className="large-6 medium-6 small-12 cell hero-image ">
           <img src={moneybag} alt="bag of money" />
         </div>
       </div>
@@ -51,7 +50,11 @@ const HomePage = () => {
                 className="button"
               ></input>
             </Link>
-            <p id="fine-print">*Terms and Conditions Apply</p>
+
+            <Link to="/legal">
+              <input type="button" value="*Terms and Conditions Apply"></input>
+            </Link>
+
             <h3>Come back every 72 hours to play</h3>
           </div>
         </div>
@@ -143,15 +146,10 @@ const HomePage = () => {
 
       <div className="grid-x grid-padding-x">
         <div className="large-12 medium-12 small-12 cell">
-          <div className="sponsors-box-card">
-            <h3 className="sponsors-title">Check Out Our Sponsors</h3>
-            <img src={tacosuperstore} alt="Taco Superstore logo" />
-            <img src={rcoas} alt="Raw Cabbage on a Stick logo" />
-            <img src={glorbotronic} alt="Glorbotronic logo" />
-            <img src={freshkicks} alt="Fresh Kicks logo" />
-          </div>
+          <Sponsors />
         </div>
       </div>
+      <ContestFooter />
     </div>
   );
 };

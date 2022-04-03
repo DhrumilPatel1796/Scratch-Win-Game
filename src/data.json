@@ -10,5 +10,8 @@
         {"id": 8, "question": "6 + 7 =", "answer": 13},
         {"id": 9, "question": "56 + 72 =", "answer": 128},
         {"id": 10, "question": "1000/5 =", "answer": 200}
+    ],
+    "user": [
+        {"firstName": "", "lastName": "", "province": "", "email": "", "dateOfBirth": "", "password": "", "consent": "" }
     ]
 }
