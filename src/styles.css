@@ -124,17 +124,18 @@ code {
 #main {
   padding: 5px;
 }
-/* HEADER */
-#logo-container img {
-  max-width: 6rem;
-  max-height: 100%; /*Constrain logo height to match parent's height*/
+
+/* Navbar Styling */
+
+.bmd-logo {
+  max-width: 80%;
 }
-#nav-logo {
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 1rem;
+
+.header-bar {
+  align-items: center;
   margin-bottom: 1rem;
 }
+
 #nav-buttons {
   display: flex;
   align-items: center;
@@ -142,35 +143,24 @@ code {
   gap: 1.5rem;
   margin-left: auto;
 }
-#nav-buttons input {
+#nav-buttons input:not(.button) {
   border: none;
   background: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
-#nav-buttons input:hover {
-  color: #34e718;
+#nav-buttons input:hover:not(.button) {
+  color: #fd73ff;
 }
 
-#nav-buttons #play {
-  background: linear-gradient(180deg, #35f3ff 0%, #2fe99c 129.1%);
-  border-radius: 40px;
-  box-shadow: inset 6px 4px 6px rgba(255, 255, 255, 0.25);
-  mix-blend-mode: normal;
-  padding: 0.5em;
-  color: black;
-}
-
-#nav-buttons #play {
-  padding-top: 15px;
-}
-
-#nav-buttons #play:hover {
-  background: linear-gradient(180deg, #35f3ff 0%, #6ffff8 129.1%);
-}
+/* End of Navbar Styling */
 
 /* Home Page Styling */
+
+.contest-content {
+  margin: 4rem 0;
+}
 .scratch-win-box-card,
 .prizes-box-card {
   display: flex;
@@ -180,9 +170,9 @@ code {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
   min-height: 27.5rem;
-  margin: 5rem 0;
+  margin-bottom: 1rem;
 }
 
 .prizes-list * {
