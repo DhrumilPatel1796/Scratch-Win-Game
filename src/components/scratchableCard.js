@@ -2,14 +2,13 @@
 // import '../../node_modules/touch2reveal/Touch2Reveal.css';
 import React, { useState, useEffect } from 'react';
 // import ScratchCard from 'react-scratch-coupon';
-import couponCover from '../images/png/blueTexture.jpg';
-import couponBack from '../images/png/scratchcard.jpg';
+import couponCover from '../images/png/coins-w-blur.png';
 import brush from '../images/png/brush.png';
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
 let prizeCard = `<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="scratch-card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+<svg version="1.1" id="scratch-card-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 886 350" style="enable-background:new 0 0 886 350;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#scratch-bg_00000009587973416215273440000014370953611773108127_);}
@@ -127,7 +126,7 @@ const scInfos = document.querySelector('.sc__infos');
 const sc = new ScratchCard('#js--sc--container', {
   scratchType: SCRATCH_TYPE.BRUSH,
   containerWidth: scContainer.offsetWidth,
-  containerHeight: 300,
+  containerHeight: scContainer.offsetWidth/2.53,
   brushSrc: brush,
   imageForwardSrc: couponCover,
   htmlBackground: `<div id="the_card">${prizeCard}</div>`,
@@ -138,7 +137,7 @@ const sc = new ScratchCard('#js--sc--container', {
     alert('Now the window will reload !')
     window.location.reload()
   }
-})
+});
 
 // Init
 sc.init().then(() => {
@@ -155,12 +154,6 @@ sc.init().then(() => {
     
     return (
          <article className='the-scratch-card'>
-                {/* <ScratchCard width={'100%'} height={300} cover={couponCover}>
-                    <form className="form" >
-                        <h2>Hello There!</h2>
-                        <p>I am a hidden card</p>
-                    </form>
-                </ScratchCard> */}
                 <div className="sc__wrapper">
 
                     <div id="js--sc--container" className="sc__container">

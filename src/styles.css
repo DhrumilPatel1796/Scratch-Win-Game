@@ -218,7 +218,7 @@ code {
 
 .sponsors-box-card {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-between;
   row-gap: 0.875rem;
   background-color: #0e0b3d;
@@ -415,6 +415,9 @@ footer {
     gap: 1rem;
     justify-self: unset;
   }
+  .sponsors-container img {
+    margin-top: 1rem;
+  }
 }
 
 /* RESULTS PAGE */
@@ -505,6 +508,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 #nav-buttons-footer input {
   border: none;
@@ -531,7 +535,7 @@ i {
   /* height: 300px;
   max-width: 300px; */
   margin: 0 auto;
-  border: 5px solid white;
+  border: none;
 }
 
 .sc__container {
@@ -568,4 +572,10 @@ i {
 .the-scratch-card {
   width: 70%;
   margin: auto;
+}
+#the_card{
+  background: #a955ff;
+}
+#scratch-card-svg {
+  height:100%;
 }
