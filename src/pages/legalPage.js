@@ -39,9 +39,18 @@ const LegalPage = () => {
                         Please contact contest@buymoredollars.ca for any questions.
                     </p>
                     <h3>Gameplay</h3>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+                    <ul>
+                        <li>Press the "Play to Win" button and fill out the sign up information.</li>
+                        <li>Once registered, click or press if on mobile and drag over the scratch card surface to reveal your prize.</li>
+                        <li>After scratching, your BuyMore Dolaars will be added to your account. You can play once ever 72 hours. <i>* subject to terms and conditions.</i></li>
+                    </ul>
                     <h3>Prizes</h3>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p><br/>
+                    <ul>
+                        <li>1 prize of 10,000 BuyMore Dollars.</li>
+                        <li>5 prizes of 750 BuyMore Dollars.</li>
+                        <li>10 prizes of 100 BuyMore Dollars.</li>
+                        <li>100 prizes of 20 BuyMore Dollars.</li>
+                    </ul>
                 <Sponsors />
                 <article className='playBtn-legal'> 
                     <PlayToWinBtn/>
