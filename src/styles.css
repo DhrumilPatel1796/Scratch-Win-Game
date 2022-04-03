@@ -395,7 +395,7 @@ footer {
 .result-instructions {
   margin: 1rem 0;
 }
-.user-won {
+.user-won, .user-lost {
   margin: 0 auto;
   text-align: center;
 }
