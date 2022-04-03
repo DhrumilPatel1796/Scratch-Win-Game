@@ -18,6 +18,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   padding: 2rem;
+  letter-spacing: 0.05rem;
 }
 
 /* Font Styling */
