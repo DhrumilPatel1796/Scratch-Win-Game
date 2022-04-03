@@ -1,5 +1,4 @@
 import '../styles.css';
-import ContestHeader from '../components/contestHeader';
 import Sponsors from '../components/sponsors';
 import PlayToWinBtn from '../components/playToWinBtn';
 import ContestFooter from '../components/contestFooter';
@@ -7,15 +6,14 @@ import ContestFooter from '../components/contestFooter';
 const LegalPage = () => {
     return (
         <main>
-            <ContestHeader />
-            <section>
-                <h1>I am the legal page 🤐</h1>
-                <h1>Terms and Conditions</h1>
-                <article>
-                    <h2>Sample giveaway terms:</h2>
-                    <cite>
+            <section className="grid-x grid-padding-x">    
+                <article className='cell large-1 medium-1 small-1'></article>
+                <article className='cell large-9 medium-9 small-12'>
+                <h2>Terms and Conditions</h2>
+                <h3>Sample giveaway terms:</h3>
+                <cite>
                         <a href='https://mamanloupsden.com/sample-contest-terms-for-giveaways-open-to-canada-andor-us/'>Legal sample source</a>
-                    </cite>
+                    </cite><br/>
                     <p>
                         CONTEST (“CONTEST”) SPONSORED BY BuyMore Dollars (“SPONSOR”) AND
                         ADMINISTERED BY BuyMore Dollars. (“ADMINISTRATOR”). CONTEST BEGINS ON
@@ -40,20 +38,16 @@ const LegalPage = () => {
                         for illustrative purposes only.<br/>
                         Please contact contest@buymoredollars.ca for any questions.
                     </p>
-                </article>
-
-                <article>
-                    <h2>Gameplay</h2>
+                    <h3>Gameplay</h3>
                     <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
-                </article>
-                <article>
-                    <h2>Prizes</h2>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
-                </article>
+                    <h3>Prizes</h3>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p><br/>
                 <Sponsors />
-                <article className='playBtn-legal'>
-                <PlayToWinBtn />
+                <article className='playBtn-legal'> 
+                    <PlayToWinBtn/>
                 </article>
+                </article>
+                <article className='cell large-1 medium-1 small-1'></article>
             </section>
             <ContestFooter />
         </main>
