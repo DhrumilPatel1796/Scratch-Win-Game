@@ -228,7 +228,7 @@ code {
 
 .sponsors-box-card {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-between;
   row-gap: 0.875rem;
   background-color: #0e0b3d;
@@ -424,6 +424,9 @@ footer {
     flex-direction: row;
     gap: 1rem;
     justify-self: unset;
+  }
+  .sponsors-container img {
+    margin-top: 1rem;
   }
 }
 
