@@ -455,3 +455,9 @@ label {
 #nav-buttons-footer input:hover {
   color: #34e718;
 }
+/* SCRATCH CARD */
+div canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
