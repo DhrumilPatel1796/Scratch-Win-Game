@@ -3,8 +3,9 @@ import '../styles.css';
 const ContestHeader = () => {
     return (
         <article>
-            <h1>Contest Header</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h2>BuyMore Dollars</h2>
+            <h3>Scratch and Win Contest</h3>
+            <p> <i class="fa-regular fa-1"></i> Register to play. <i class="fa-regular fa-2"></i> Stratch the card area to reveal your prize. <i class="fa-regular fa-3"></i> Enjoy lunch on us!</p>
         </article>
     )
 };
