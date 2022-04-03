@@ -542,7 +542,7 @@ i {
   /* height: 300px;
   max-width: 300px; */
   margin: 0 auto;
-  border: 5px solid white;
+  border: none;
 }
 
 .sc__container {
@@ -565,7 +565,7 @@ i {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .sc__infos {
@@ -579,4 +579,5 @@ i {
 .the-scratch-card {
   width: 70%;
   margin: auto;
+  background: #a955ff;
 }

@@ -2,8 +2,7 @@
 // import '../../node_modules/touch2reveal/Touch2Reveal.css';
 import React, { useState, useEffect } from 'react';
 // import ScratchCard from 'react-scratch-coupon';
-import couponCover from '../images/png/blueTexture.jpg';
-import couponBack from '../images/png/scratchcard.jpg';
+import couponCover from '../images/png/coins-w-blur.png';
 import brush from '../images/png/brush.png';
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
