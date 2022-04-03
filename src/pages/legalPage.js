@@ -22,12 +22,13 @@ const LegalPage = () => {
                 <article className='cell large-1 medium-1 small-1'><NeonHfcircle /></article>
                 
                 <article className='cell large-1 medium-1 small-1'></article>
+                <article className='cell large-1 medium-1 small-1'></article>
                 <article className='cell large-9 medium-9 small-12'>
                 <h2>Terms and Conditions</h2>
                 <h3>Sample giveaway terms:</h3>
                 <cite>
-                        <a href='https://mamanloupsden.com/sample-contest-terms-for-giveaways-open-to-canada-andor-us/'>Legal sample source</a>
-                    </cite><br/>
+                    <a href='https://mamanloupsden.com/sample-contest-terms-for-giveaways-open-to-canada-andor-us/'>Legal sample source</a>
+                </cite><br/>
                     <p>
                         CONTEST (“CONTEST”) SPONSORED BY BuyMore Dollars (“SPONSOR”) AND
                         ADMINISTERED BY BuyMore Dollars. (“ADMINISTRATOR”). CONTEST BEGINS ON
