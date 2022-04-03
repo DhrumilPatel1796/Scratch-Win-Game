@@ -3,10 +3,24 @@ import Sponsors from '../components/sponsors';
 import PlayToWinBtn from '../components/playToWinBtn';
 import ContestFooter from '../components/contestFooter';
 
+import { ReactComponent as NeonSqiggle } from '../images/svg/neon-sqiggle.svg'
+import { ReactComponent as NeonCoin } from '../images/svg/neon-coin.svg'
+import { ReactComponent as NeonCube } from '../images/svg/neon-cube.svg'
+import { ReactComponent as NeonHfcircle } from '../images/svg/neon-hfcircle.svg'
+import { ReactComponent as NeonMoney } from '../images/svg/neon-money.svg'
 const LegalPage = () => {
     return (
         <main>
-            <section className="grid-x grid-padding-x">    
+            <section className="grid-x grid-padding-x">
+
+                <article className='cell large-2 medium-2 small-2'><NeonSqiggle /></article>
+                <article className='cell large-1 medium-1 small-1'><NeonCoin /></article>
+                <article className='cell large-2 medium-2 small-2'><NeonCube /></article>
+                <article className='cell large-1 medium-1 small-1'><NeonHfcircle /></article>
+                <article className='cell large-2 medium-2 small-2'><NeonMoney /></article>
+                <article className='cell large-2 medium-2 small-2'><NeonCube /></article>
+                <article className='cell large-1 medium-1 small-1'><NeonHfcircle /></article>
+                
                 <article className='cell large-1 medium-1 small-1'></article>
                 <article className='cell large-9 medium-9 small-12'>
                 <h2>Terms and Conditions</h2>
