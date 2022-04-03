@@ -26,14 +26,14 @@ class UserWon extends React.Component {
         // check if user got answer correct
         if (userAnswer == correctAnswer) {
             // show details on win
-            winningContainer.innerHTML = `<p>You will receive your BMDs in the next 6-8 weeks</p><p>Thanks for playing! Play again in 72 hours!</p>`
+            winningContainer.innerHTML = `<div class="puzzle"><p>You will receive your BMDs in the next 6-8 weeks</p><p>Thanks for playing! Play again in 72 hours!</p></div>`
             // hide question
             resultInstructions.style.display = "none";
             initialInstructions.style.display = "none";
             questionContainer.style.display = "none";
         } else {
             // show details on loss
-            winningContainer.innerHTML = `<p>We're sorry, you did not pass the skill-testing question :(.</p><p>Thanks for playing! Play again in 72 hours!</p>`
+            winningContainer.innerHTML = `<div class="puzzle"><p>We're sorry, you did not pass the skill-testing question :(.</p><p>Thanks for playing! Play again in 72 hours!</p></div>`
             // hide question
             resultInstructions.style.display = "none";
             initialInstructions.style.display = "none";
@@ -43,14 +43,14 @@ class UserWon extends React.Component {
 
     render () {
         return (
-            <article>
+            <article className="user-won cell large-6">
                 <h2>You've won XXX BMDs!</h2>
-                <p className='initial-instructions'>Please answer the simple skill testing question to claim your prize</p>
                 {mathData.mathData.map((data, key) => {
                     return (
                         <aside key={key} className='skill-testing'>
                             {data.id === randNum  &&
                                 <div className='puzzle'>
+                                    <p className='initial-instructions'>Please answer the simple skill testing question to claim your prize</p>
                                     <p>
                                         <label htmlFor='math'>{data.question}</label>
                                         <input type='number' name='math' id='math' />
