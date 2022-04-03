@@ -8,6 +8,7 @@ import freshkicks from "../images/png/logo-fresh-kicks.png";
 import glorbotronic from "../images/png/logo-glorbotronic-burgers.png";
 import rcoas from "../images/png/logo-raw-cabbage-on-a-stick-hut.png";
 import tacosuperstore from "../images/png/logo-taco-superstore.png";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -19,9 +20,14 @@ const HomePage = () => {
             Back again for another year, BuyMore Dollars has got your back with
             our scratch and win contest!
           </p>
-          <a href="#" className="button">
-            Play to Win
-          </a>
+          <Link to="/contest">
+            <input
+              type="button"
+              value="Play To Win"
+              id="play"
+              className="button"
+            ></input>
+          </Link>
         </div>
         <div className="large-6 cell">
           <img src={moneybag} alt="bag of money" />
@@ -33,13 +39,18 @@ const HomePage = () => {
           <div className="scratch-win-box-card">
             <h2>Scratch and Win</h2>
             <p>
-              For this years contest, we hace teamed up with some of your
-              favourite restaurants! With BuyMore Dollars you win your wat to
-              free meals on us
+              For this year's contest, we have teamed up with some of your
+              favourite restaurants. With BuyMore Dollars you win your way to
+              free meals on us!
             </p>
-            <a href="#" className="button">
-              Play to Win
-            </a>
+            <Link to="/contest">
+              <input
+                type="button"
+                value="Play To Win"
+                id="play"
+                className="button"
+              ></input>
+            </Link>
             <p id="fine-print">*Terms and Conditions Apply</p>
             <h3>Come back every 72 hours to play</h3>
           </div>
@@ -69,10 +80,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid-x grid-padding-x">
+      <div className="grid-x grid-padding-x rules-content">
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={formicon} alt="icon from" />
+            <img src={formicon} alt="icon from" className="icon-resize" />
             <h3>Register</h3>
             <p>Hit play to win and fill out the sign up info</p>
           </div>
@@ -80,7 +91,7 @@ const HomePage = () => {
 
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={ticketicon} alt="icon ticket" />
+            <img src={ticketicon} alt="icon ticket" className="icon-resize" />
             <h3>Scratch and Play</h3>
             <p>
               Once registered, click and drag the scratch area to reveal your
@@ -91,7 +102,7 @@ const HomePage = () => {
 
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={trophyicon} alt="icon trophy" />
+            <img src={trophyicon} alt="icon trophy" className="icon-resize" />
             <h3>Claim Your Prize</h3>
             <p>
               After scratching, your BuyMore Dollars will be added to your
@@ -101,11 +112,16 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid-x grid-padding-x align-center">
-        <div className="large-12 medium-12 small-12 cell">
-          <a href="#" className="button">
-            Play to Win
-          </a>
+      <div className="grid-x grid-padding-x">
+        <div className="large-12 medium-12 small-12 cell align-center">
+          <Link to="/contest">
+            <input
+              type="button"
+              value="Play To Win"
+              id="play"
+              className="button"
+            ></input>
+          </Link>
         </div>
       </div>
 
