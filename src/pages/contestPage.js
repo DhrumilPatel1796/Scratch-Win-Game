@@ -2,7 +2,7 @@ import '../styles.css';
 // import ScratchCard from "../components/scratchCard";
 import React from 'react';
 import ContestHeader from '../components/contestHeader';
-import scratchableCard from "../components/scratchableCard";
+import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = () => {
@@ -11,9 +11,8 @@ const ContestPage = () => {
             <ContestHeader />
             <h1>I am the contest page 😎</h1>
             <section id="scratchCardContainer">
-                <scratchableCard></scratchableCard>
+                <ScratchableCard></ScratchableCard>
             </section>
-    )
             <Sponsors />
         </main>
     );
