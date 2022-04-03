@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-scratch-coupon": "^1.0.7",
+    "react-scratchcard": "^1.1.2",
     "react-script-tag": "^1.1.2",
     "react-scripts": "5.0.0",
     "touch2reveal": "^1.0.0",

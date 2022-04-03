@@ -109,7 +109,9 @@ let initForm = function() {
     ];
 
     let formSubmit = document.querySelector("#formSubmit");
-    formSubmit.addEventListener("click", formChecker);
+    if (formSubmit){
+        formSubmit.addEventListener("click", formChecker);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
