@@ -23,7 +23,8 @@ const LegalPage = () => {
                 
                 <article className='cell large-1 medium-1 small-1'></article>
                 <article className='cell large-1 medium-1 small-1'></article>
-                <article className='cell large-9 medium-9 small-12'>
+                <article className='cell large-1 medium-1 small-1'></article>
+                <article className='cell large-8 medium-8 small-12'>
                 <h2>Terms and Conditions</h2>
                 <h3>Sample giveaway terms:</h3>
                 <cite>
