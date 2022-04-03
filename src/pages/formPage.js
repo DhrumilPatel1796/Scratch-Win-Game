@@ -22,21 +22,21 @@ const FormPage = () => {
             <h2 id="bmd-form-title">Create an account</h2>
             <form id="bmd_form" action="#">
               <fieldset>
-                <label for="firstName" className="firstName">
+                <label htmlFor="firstName" className="firstName">
                   First Name
                 </label>
                 <input name="firstName" id="firstName" type="text" />
                 <p className="bmd-error" id="firstNameError"></p>
               </fieldset>
               <fieldset>
-                <label for="lastName" className="lastName">
+                <label htmlFor="lastName" className="lastName">
                   Last Name
                 </label>
                 <input name="lastName" id="lastName" type="text" />
                 <p className="bmd-error" id="lastNameError"></p>
               </fieldset>
               <fieldset>
-                <label for="province" className="province">
+                <label htmlFor="province" className="province">
                   Province
                 </label>
                 <select name="province" id="province">
@@ -57,14 +57,14 @@ const FormPage = () => {
                 <p className="bmd-error" id="provinceError"></p>
               </fieldset>
               <fieldset>
-                <label for="email" className="email">
+                <label htmlFor="email" className="email">
                   Email
                 </label>
                 <input name="email" id="email" type="text" />
                 <p className="bmd-error" id="emailError"></p>
               </fieldset>
               <fieldset>
-                <label for="dob" className="dob">
+                <label htmlFor="dob" className="dob">
                   Date of Birth
                 </label>
                 <input type="date" id="dob" name="dob" />
@@ -74,15 +74,15 @@ const FormPage = () => {
                 <p className="bmd-error" id="dobError"></p>
               </fieldset>
               <fieldset>
-                <label for="password" className="password">
+                <label htmlFor="password" className="password">
                   Password
                 </label>
                 <input name="password" id="password" type="password" />
                 <p className="bmd-error" id="passwordError"></p>
               </fieldset>
-              <fieldset id="bmd-consent-fieldset" class="large-7 cell">
+              <fieldset id="bmd-consent-fieldset" className="large-7 cell">
                 <input id="bmd-consent" type="checkbox" />
-                <label id="bmd-consent-label" for="bmd-consent">
+                <label id="bmd-consent-label" htmlFor="bmd-consent">
                   I consent to the terms and conditions.
                 </label>
               </fieldset>

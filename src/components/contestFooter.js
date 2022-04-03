@@ -16,9 +16,9 @@ const ContestFooter = () => {
             <article className='cell large-6 medium-2 small-12'></article>
 
             <article className='cell large-2 medium-4 small-12'>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-instagram"></i>
             </article>
 
         </section>
