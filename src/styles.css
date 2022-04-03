@@ -503,7 +503,6 @@ label {
 .sc__wrapper {
   display: block;
   width: 100%;
-  height: 300px;
   max-width: 300px;
   margin: 0 auto;
   border: 5px solid white;
@@ -512,8 +511,8 @@ label {
 .sc__container {
   position: relative;
   overflow: hidden;
-  height: 300px;
-  max-width: 300px;
+  height: auto;
+  max-width: 100%;
 }
 
 .sc__container > img {
