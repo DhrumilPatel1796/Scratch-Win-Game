@@ -1,5 +1,8 @@
 import '../styles.css';
 import React from 'react';
+import mathData from '../data.json';
+// create random number for math question
+let randNum = Math.floor(Math.random() * 10);
 
 class UserWon extends React.Component {
 
@@ -11,16 +14,30 @@ class UserWon extends React.Component {
     }
 
     handleMath() {
+        // get dom elements for skill testing question
         let userAnswer = document.getElementById("math").value;
         let winningContainer = document.querySelector(".skill-testing");
+        let questionContainer = document.querySelector(".puzzle");
+        let initialInstructions = document.querySelector(".initial-instructions");
         let resultInstructions = document.querySelector(".result-instructions");
-        // console.log(userAnswer);
-        if (userAnswer == 4) {
+        let questionData = document.querySelector(".submit");
+        let correctAnswer = questionData.getAttribute('id');
+
+        // check if user got answer correct
+        if (userAnswer == correctAnswer) {
+            // show details on win
             winningContainer.innerHTML = `<p>You will receive your BMDs in the next 6-8 weeks</p><p>Thanks for playing! Play again in 72 hours!</p>`
+            // hide question
             resultInstructions.style.display = "none";
+            initialInstructions.style.display = "none";
+            questionContainer.style.display = "none";
         } else {
+            // show details on loss
             winningContainer.innerHTML = `<p>We're sorry, you did not pass the skill-testing question :(.</p><p>Thanks for playing! Play again in 72 hours!</p>`
+            // hide question
             resultInstructions.style.display = "none";
+            initialInstructions.style.display = "none";
+            questionContainer.style.display = "none";
         }
     }
 
@@ -28,14 +45,21 @@ class UserWon extends React.Component {
         return (
             <article>
                 <h2>You've won XXX BMDs!</h2>
-                <aside className='skill-testing'>
-                    <p>Please answer the simple skill testing question to claim your prize</p>
-                    <p>
-                        <label htmlFor='math'>2 + 2 =</label>
-                        <input type='number' name='math' id='math'></input>
-                    </p>
-                    <input type='submit' className='button' id='submit' value='Submit' onClick={this.handleMath}></input>
-                </aside>
+                <p className='initial-instructions'>Please answer the simple skill testing question to claim your prize</p>
+                {mathData.mathData.map((data, key) => {
+                    return (
+                        <aside key={key} className='skill-testing'>
+                            {data.id === randNum  &&
+                                <div className='puzzle'>
+                                    <p>
+                                        <label htmlFor='math'>{data.question}</label>
+                                        <input type='number' name='math' id='math' />
+                                    </p>
+                                    <input type='submit' className='button submit' id={data.answer} value='Submit' onClick={this.handleMath}></input>
+                                </div>
+                            }
+                        </aside>
+                )})}
                 <p className='result-instructions'>You will receive your BMDs in the next 6-8 weeks</p>
             </article>
         )
