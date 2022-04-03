@@ -9,13 +9,12 @@ import glorbotronic from "../images/png/logo-glorbotronic-burgers.png";
 import rcoas from "../images/png/logo-raw-cabbage-on-a-stick-hut.png";
 import tacosuperstore from "../images/png/logo-taco-superstore.png";
 import { Link } from "react-router-dom";
-import Sponsors from "../components/sponsors";
 
 const HomePage = () => {
   return (
     <div className="grid-container">
       <div className="grid-x grid-padding-x">
-        <div className="large-6 cell align-self-middle margin-top-2">
+        <div className="large-6 medium-6 small-12 cell align-self-middle margin-top-2">
           <h1>We've Got Your Lunch Covered</h1>
           <p>
             Back again for another year, BuyMore Dollars has got your back with
@@ -30,12 +29,12 @@ const HomePage = () => {
             ></input>
           </Link>
         </div>
-        <div className="large-6 cell">
+        <div className="large-6 medium-6 small-12 cell">
           <img src={moneybag} alt="bag of money" />
         </div>
       </div>
 
-      <div className="grid-x grid-padding-x">
+      <div className="grid-x grid-padding-x contest-content">
         <div className="large-6 medium-6 small-12 cell">
           <div className="scratch-win-box-card">
             <h2>Scratch and Win</h2>
@@ -60,20 +59,36 @@ const HomePage = () => {
         <div className="large-6 medium-6 small-12 cell ">
           <div className="prizes-box-card">
             <div className="grid-x grid-padding-x">
-              <div className="large-6 medium-6 small-12 cell">
+              <div className="large-12 medium-12 small-12 cell">
                 <h2>BMD Prizes</h2>
-                <img src={coingroup} alt="group of coins" />
               </div>
-              <div className="large-6 medium-6 small-12 cell ">
+              <div className="large-7 medium-6 small-6 cell prizes-coin">
+                <img
+                  src={coingroup}
+                  alt="group of coins"
+                  className="coingroup"
+                />
+              </div>
+              <div className="large-5 medium-6 small-6 cell ">
                 <div className="prizes-list align-right">
-                  <h3>10,000 BMDs</h3>
-                  <p>1 prize</p>
-                  <h3>750 BMDs</h3>
-                  <p>5 prizes</p>
-                  <h3>100 BMDs</h3>
-                  <p>10 prizes</p>
-                  <h3>20 BMDs</h3>
-                  <p>100 prizes</p>
+                  <div className="prize-info">
+                    <h3>10,000 BMDs</h3>
+                    <p>1 prize</p>
+                  </div>
+                  <div className="prize-info">
+                    <h3>750 BMDs</h3>
+                    <p>5 prizes</p>
+                  </div>
+                  <div className="prize-info">
+                    {" "}
+                    <h3>100 BMDs</h3>
+                    <p>10 prizes</p>
+                  </div>
+                  <div className="prize-info">
+                    {" "}
+                    <h3>20 BMDs</h3>
+                    <p>100 prizes</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,7 +99,7 @@ const HomePage = () => {
       <div className="grid-x grid-padding-x rules-content">
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={formicon} alt="icon from" className="icon-resize" />
+            <img src={formicon} alt="icon from" className="rules-icons" />
             <h3>Register</h3>
             <p>Hit play to win and fill out the sign up info</p>
           </div>
@@ -92,7 +107,7 @@ const HomePage = () => {
 
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={ticketicon} alt="icon ticket" className="icon-resize" />
+            <img src={ticketicon} alt="icon ticket" className="rules-icons" />
             <h3>Scratch and Play</h3>
             <p>
               Once registered, click and drag the scratch area to reveal your
@@ -103,7 +118,7 @@ const HomePage = () => {
 
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={trophyicon} alt="icon trophy" className="icon-resize" />
+            <img src={trophyicon} alt="icon trophy" className="rules-icons" />
             <h3>Claim Your Prize</h3>
             <p>
               After scratching, your BuyMore Dollars will be added to your
@@ -114,7 +129,7 @@ const HomePage = () => {
       </div>
 
       <div className="grid-x grid-padding-x">
-        <div className="large-12 medium-12 small-12 cell align-center">
+        <div className="large-12 medium-12 small-12 cell  ptw-btn">
           <Link to="/contest">
             <input
               type="button"
@@ -126,8 +141,17 @@ const HomePage = () => {
         </div>
       </div>
 
-      < Sponsors />
-
+      <div className="grid-x grid-padding-x">
+        <div className="large-12 medium-12 small-12 cell">
+          <div className="sponsors-box-card">
+            <h3 className="sponsors-title">Check Out Our Sponsors</h3>
+            <img src={tacosuperstore} alt="Taco Superstore logo" />
+            <img src={rcoas} alt="Raw Cabbage on a Stick logo" />
+            <img src={glorbotronic} alt="Glorbotronic logo" />
+            <img src={freshkicks} alt="Fresh Kicks logo" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
