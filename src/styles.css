@@ -496,16 +496,6 @@ i {
   color: #34e718;
 }
 /* SCRATCH CARD */
-/* div canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-}
-#scratchCardContainer .scratch-card div div{
-  width: 80% !important;
-} */
-
 .sc__inner {
   position: relative;
   top: 0;
