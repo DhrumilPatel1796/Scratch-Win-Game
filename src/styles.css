@@ -509,7 +509,7 @@ i {
   /* height: 300px;
   max-width: 300px; */
   margin: 0 auto;
-  border: 5px solid white;
+  border: none;
 }
 
 .sc__container {
