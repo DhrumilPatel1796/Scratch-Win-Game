@@ -228,7 +228,7 @@ code {
 
 .sponsors-box-card {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-between;
   row-gap: 0.875rem;
   background-color: #0e0b3d;
@@ -425,6 +425,9 @@ footer {
     gap: 1rem;
     justify-self: unset;
   }
+  .sponsors-container img {
+    margin-top: 1rem;
+  }
 }
 
 /* RESULTS PAGE */
@@ -515,6 +518,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 #nav-buttons-footer input {
   border: none;
@@ -575,7 +579,7 @@ i {
   font-weight: bold;
   font-size: 18px;
 }
-.the-scratch-card{
+.the-scratch-card {
   width: 70%;
   margin: auto;
 }
