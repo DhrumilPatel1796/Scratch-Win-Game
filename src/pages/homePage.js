@@ -9,6 +9,7 @@ import glorbotronic from "../images/png/logo-glorbotronic-burgers.png";
 import rcoas from "../images/png/logo-raw-cabbage-on-a-stick-hut.png";
 import tacosuperstore from "../images/png/logo-taco-superstore.png";
 import { Link } from "react-router-dom";
+import Sponsors from "../components/sponsors";
 
 const HomePage = () => {
   return (
@@ -125,17 +126,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid-x grid-padding-x">
-        <div className="large-12 medium-12 small-12 cell">
-          <div className="sponsors-box-card">
-            <h3>Check Out Our Sponsors</h3>
-            <img src={tacosuperstore} alt="Taco Superstore logo" />
-            <img src={glorbotronic} alt="Glorbotronic logo" />
-            <img src={rcoas} alt="Raw Cabbage on a Stick logo" />
-            <img src={freshkicks} alt="Fresh Kicks logo" />
-          </div>
-        </div>
-      </div>
+      < Sponsors />
+
     </div>
   );
 };
