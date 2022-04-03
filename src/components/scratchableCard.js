@@ -130,7 +130,7 @@ const sc = new ScratchCard('#js--sc--container', {
   containerHeight: 300,
   brushSrc: brush,
   imageForwardSrc: couponCover,
-  htmlBackground: prizeCard,
+  htmlBackground: `<div id="the_card">${prizeCard}</div>`,
   clearZoneRadius: 0,
   nPoints: 30,
   pointSize: 4,
@@ -154,7 +154,7 @@ sc.init().then(() => {
      });
     
     return (
-         <article className='scratch-card'>
+         <article className='the-scratch-card'>
                 {/* <ScratchCard width={'100%'} height={300} cover={couponCover}>
                     <form className="form" >
                         <h2>Hello There!</h2>
