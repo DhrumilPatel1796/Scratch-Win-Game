@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import couponCover from '../images/png/coins-w-blur.png';
 import brush from '../images/png/brush.png';
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
 const prizes = [20];
+
+
 function createPrizeCard(prizes, setResults){
     let cardNumbers = [];
     for (let i = 0; i < 3; i++) {
@@ -24,10 +27,12 @@ function createPrizeCard(prizes, setResults){
 let prizeCard;
 
 const ScratchableCard = (props) => {
+    let navigate = useNavigate();
     let scContainer = document.getElementById('js--sc--container')
     let scInfos = document.querySelector('.sc__infos');
     let sc;
     useEffect(() => {
+        
         document.getElementById('js--sc--container').innerHTML = '';
         prizeCard = createPrizeCard(prizes, props.setResults);
         scContainer = document.getElementById('js--sc--container')
@@ -43,8 +48,7 @@ const ScratchableCard = (props) => {
             nPoints: 30,
             pointSize: 4,
         callback: function () {
-            alert('Now the window will reload !')
-            window.location.reload()
+            navigate("/results", { replace: true });
             }
         });
 
@@ -62,8 +66,7 @@ const ScratchableCard = (props) => {
                 nPoints: 30,
                 pointSize: 4,
                 callback: function () {
-                  alert('Now the window will reload !')
-                  window.location.reload()
+                    navigate("/results", { replace: true });
                 }
               });
               initScratchCard();
@@ -77,12 +80,15 @@ const ScratchableCard = (props) => {
             sc.canvas.addEventListener('scratch.move', () => {
                 let percent = sc.getPercent().toFixed(0);
                 scInfos.innerHTML = percent + '%';
-                console.log(percent)
+                // console.log(percent);
+                //Trigger clear
+                if (percent>20){
+                    sc.clear();
+                }
             })
 
             //Clears the extra cards that get added on resizing after navigating to a different page........
             let extraCards= document.getElementsByClassName('sc__inner'); 
-            console.log(extraCards);
             while(extraCards.length>1){
                 extraCards[0].remove();
                 extraCards= document.getElementsByClassName('sc__inner');
