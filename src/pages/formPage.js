@@ -94,7 +94,8 @@ let formChecker = function(e) {
             "dateOfBirth": dob.value,
             "password": password.value,
             "consent": bmdConsent.value,
-            "lastParticipated": lastParticipated
+            // "lastParticipated": lastParticipated
+            "lastParticipated": new Date()
           }
         ]
         globalUserSetter({
@@ -105,7 +106,8 @@ let formChecker = function(e) {
           "dateOfBirth": dob.value,
           "password": password.value,
           "consent": bmdConsent.value,
-          "lastParticipated": lastParticipated
+            // "lastParticipated": lastParticipated
+            "lastParticipated": new Date()
         })
         console.log(user.user);
         return user.user;

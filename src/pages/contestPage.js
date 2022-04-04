@@ -7,6 +7,8 @@ import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = (props) => {
+    const [canPlay, setCanPlay] = useState(true);
+    let remainingHours = 100;
     let navigate = useNavigate();
     useEffect(() => {
         console.log(props.user);
@@ -15,14 +17,20 @@ const ContestPage = (props) => {
         }
         //Calculate hours elapsed since last time....
         let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
-        console.log(hours);
+        remainingHours = 72 - hours;
+        if (hours<72){
+            setCanPlay(false);
+        }
     });
 
     return (
         <main>
             <ContestHeader />
             <section id="scratchCardContainer">
-                <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
+            {canPlay
+                ? <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
+                :<h2>Ooops, please wait {remainingHours} before playing again</h2>
+            }
             </section>
             <Sponsors />
         </main>
