@@ -1,5 +1,9 @@
 import { Outlet, Link } from "react-router-dom";
 const navbar = () => {
+  const contestPageLink = { 
+    pathname: "/contest", 
+    stringTest: "Hello from parent" 
+  };
   return (
     <>
       <header className="grid-container">
@@ -23,7 +27,7 @@ const navbar = () => {
               <Link to="/results">
                 <input type="button" value="Results" id=""></input>
               </Link>
-              <Link to="/contest">
+              <Link to={contestPageLink}>
                 <input
                   type="button"
                   value="Play To Win"
