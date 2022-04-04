@@ -16,7 +16,13 @@ import Navbar from "./components/navbar";
 function App() {
 
   const [win, setWin] = useState(false);
+  const [userPrize, setPrize] = useState(0);
 
+  let setResults = function (result, prize){
+    setWin(result);
+    setPrize(prize);
+    console.log('results were set')
+  }
 
   return (
     
@@ -27,7 +33,7 @@ function App() {
         <Route path="form" element={<FormPage />} />
         <Route path="legal" element={<LegalPage/>} />
         <Route path="results" element={<ResultsPage />} />
-        <Route path="contest" element={<ContestPage />} />
+        <Route path="contest" element={<ContestPage stringTest={"Hello from parent"} setWin={setWin}  setPrize={setPrize}/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

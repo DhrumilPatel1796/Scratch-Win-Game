@@ -5,13 +5,15 @@ import ContestHeader from '../components/contestHeader';
 import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
-const ContestPage = () => {
+const ContestPage = (props) => {
+    // this.setWin(true);
+    //     this.setPrize(34)
     return (
         <main>
             <ContestHeader />
             <h1>I am the contest page 😎</h1>
             <section id="scratchCardContainer">
-                <ScratchableCard></ScratchableCard>
+                <ScratchableCard setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
             </section>
             <Sponsors />
         </main>
