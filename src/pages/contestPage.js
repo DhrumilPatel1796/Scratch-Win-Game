@@ -19,6 +19,7 @@ const ContestPage = (props) => {
             navigate("/form", { replace: true });
         }
         else{
+                setCanPlay(true);
                 let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
                 if (hours<72){
                     setHasWaited(false);
