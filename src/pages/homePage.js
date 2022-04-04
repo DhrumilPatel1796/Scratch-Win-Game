@@ -5,7 +5,6 @@ import formicon from "../images/svg/icon-form.svg";
 import ticketicon from "../images/svg/icon-ticket.svg";
 import trophyicon from "../images/svg/icon-trophy.svg";
 import Sponsors from "../components/sponsors";
-import ContestFooter from "../components/contestFooter";
 
 import { Link } from "react-router-dom";
 

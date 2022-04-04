@@ -1,7 +1,6 @@
 import '../styles.css';
 import Sponsors from '../components/sponsors';
 import PlayToWinBtn from '../components/playToWinBtn';
-import ContestFooter from '../components/contestFooter';
 
 import { ReactComponent as NeonSqiggle } from '../images/svg/neon-sqiggle.svg'
 import { ReactComponent as NeonCoin } from '../images/svg/neon-coin.svg'
