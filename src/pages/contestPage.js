@@ -1,14 +1,19 @@
 import '../styles.css';
+import { useNavigate } from "react-router-dom";
+import React, { useCallback, useState, useEffect } from 'react';
 // import ScratchCard from "../components/scratchCard";
-import React from 'react';
 import ContestHeader from '../components/contestHeader';
 import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = (props) => {
-    // this.setWin(true);
-    //     this.setPrize(34)
-    console.log(props.user)
+    let navigate = useNavigate();
+    useEffect(() => {
+        if(props.user===0){
+            navigate("/form", { replace: true });
+        }
+    });
+
     return (
         <main>
             <ContestHeader />
