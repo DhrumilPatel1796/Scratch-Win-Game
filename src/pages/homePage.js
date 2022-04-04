@@ -149,7 +149,6 @@ const HomePage = () => {
           <Sponsors />
         </div>
       </div>
-      <ContestFooter />
     </div>
   );
 };

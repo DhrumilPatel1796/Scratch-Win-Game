@@ -74,7 +74,6 @@ const LegalPage = () => {
                 </article>
                 <article className='cell large-1 medium-1 small-1'></article>
             </section>
-            <ContestFooter />
         </main>
     );
 }

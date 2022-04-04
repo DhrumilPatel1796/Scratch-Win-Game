@@ -12,6 +12,7 @@ import LegalPage from "./pages/legalPage";
 import ResultsPage from "./pages/resultsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Navbar from "./components/navbar";
+import ContestFooter from './components/contestFooter';
 
 function App() {
 
@@ -37,7 +38,9 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
+    < ContestFooter />
   </BrowserRouter>  
+  
   
   );
 }
