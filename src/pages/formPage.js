@@ -8,6 +8,7 @@ import {useNavigate} from 'react-router-dom';
 let fieldsCheck;
 let firstName, firstNameError, lastName, lastNameError, province, provinceError, email, emailError, dob, dobError, password, passwordError, bmdConsent, bmdConsentError;
 let errorsDetected;
+let globalUserSetter;
 
 // form validation
 let isNotEmpty = function(userInput) {
@@ -94,6 +95,15 @@ let formChecker = function(e) {
             "consent": bmdConsent.value
           }
         ]
+        globalUserSetter({
+          "firstName": firstName.value,
+          "lastName": lastName.value,
+          "province": province.value,
+          "email": email.value,
+          "dateOfBirth": dob.value,
+          "password": password.value,
+          "consent": bmdConsent.value
+        })
         console.log(user.user);
         return user.user;
     }
@@ -106,7 +116,9 @@ let errorsReset = function() {
 }
 
 // get form values on load
-let initForm = function() {
+let initForm = function(setUser) {
+    //Setting the user setter here
+    globalUserSetter = setUser;
     firstName = document.querySelector("#firstName");
     firstNameError = document.querySelector("#firstNameError");
     lastName = document.querySelector("#lastName");
@@ -139,14 +151,14 @@ let initForm = function() {
 }
 
 
-const FormPage = () => {
+const FormPage = (props) => {
 
   // routing hooks
   const navigate = useNavigate();
   const handleOnClick = useCallback(() => navigate('/contest', {replace: true}), [navigate]);
 
   useEffect(() => {
-    initForm();
+    initForm(props.setUser);
 });
 
   return (

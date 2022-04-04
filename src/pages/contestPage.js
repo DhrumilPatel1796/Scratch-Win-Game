@@ -8,6 +8,7 @@ import Sponsors from '../components/sponsors';
 const ContestPage = (props) => {
     // this.setWin(true);
     //     this.setPrize(34)
+    console.log(props.user)
     return (
         <main>
             <ContestHeader />

@@ -18,6 +18,7 @@ function App() {
 
   const [win, setWin] = useState(false);
   const [userPrize, setPrize] = useState(0);
+  const [user, setUser] = useState(0);
 
   let setResults = function (result, prize){
     setWin(result);
@@ -30,10 +31,10 @@ function App() {
     <Routes>
         <Route path="/" element={<Navbar />}>
         <Route index element={<HomePage/>} />
-        <Route path="form" element={<FormPage />} />
+        <Route path="form" element={<FormPage setUser={setUser}/>} />
         <Route path="legal" element={<LegalPage/>} />
         <Route path="results" element={<ResultsPage didUserWin={win} userPrize={userPrize}/>} />
-        <Route path="contest" element={<ContestPage setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />
+        <Route path="contest" element={<ContestPage user={user} setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
