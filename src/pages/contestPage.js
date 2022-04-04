@@ -7,8 +7,8 @@ import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = (props) => {
-    const [canPlay, setCanPlay] = useState(true);
-    let remainingHours = 100;
+    let [canPlay, setCanPlay] = useState(true);
+    let [remainingHours, setRemainingHours] = useState(100);
     let navigate = useNavigate();
     useEffect(() => {
         console.log(props.user);
@@ -17,7 +17,10 @@ const ContestPage = (props) => {
         }
         //Calculate hours elapsed since last time....
         let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
-        remainingHours = 72 - hours;
+        let remaining = 72 - hours;
+        let days = Math.floor(remaining/24);
+        let hms = new Date(remaining * 3600 * 1000).toISOString().substr(11, 8)
+        setRemainingHours(`${days} days ${hms}`);
         if (hours<72){
             setCanPlay(false);
         }
