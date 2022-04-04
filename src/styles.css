@@ -583,3 +583,12 @@ i {
 #scratch-card-svg {
   height: 100%;
 }
+
+/* FOUNDATIONS NAVBAR */
+.top-bar, .top-bar ul {
+  background-color: transparent;
+}
+.top-bar, .top-bar ul li{
+  display: flex;
+  align-items: center;
+}
