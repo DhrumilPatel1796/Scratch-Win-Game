@@ -92,8 +92,8 @@ let formChecker = function(e) {
           "dateOfBirth": dob.value,
           "password": password.value,
           "consent": bmdConsent.value,
-          "lastParticipated": lastParticipated
-          // "lastParticipated": new Date()
+          // "lastParticipated": lastParticipated
+          "lastParticipated": new Date()
         }
         user.user = [
           ...user.user,

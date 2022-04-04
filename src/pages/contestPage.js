@@ -53,7 +53,7 @@ const ContestPage = (props) => {
 
     return (
         <main>
-            {canPlay? 
+            {canPlay && hasWaited? 
                 <div>
                     <ContestHeader />
                     <section id="scratchCardContainer">
