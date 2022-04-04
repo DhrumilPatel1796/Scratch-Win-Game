@@ -83,6 +83,7 @@ let formChecker = function(e) {
     else{
         //Submit user data
         console.log("Awesome. You are ready to play");
+        let lastParticipated = new Date().setYear(1980);
         user.user = [
           ...user.user,
           {
@@ -92,7 +93,8 @@ let formChecker = function(e) {
             "email": email.value,
             "dateOfBirth": dob.value,
             "password": password.value,
-            "consent": bmdConsent.value
+            "consent": bmdConsent.value,
+            "lastParticipated": lastParticipated
           }
         ]
         globalUserSetter({
@@ -102,7 +104,8 @@ let formChecker = function(e) {
           "email": email.value,
           "dateOfBirth": dob.value,
           "password": password.value,
-          "consent": bmdConsent.value
+          "consent": bmdConsent.value,
+          "lastParticipated": lastParticipated
         })
         console.log(user.user);
         return user.user;
