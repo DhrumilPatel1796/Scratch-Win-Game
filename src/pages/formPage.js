@@ -165,7 +165,8 @@ const FormPage = (props) => {
     <section id="main" className="main">
       <main className="main-container">
         <div className="grid-x grid-padding-x">
-          <div id="advertisement-Panel" className="large-6 medium-6 small-12">
+          <div className="large-1 medium-1 small-1"></div>
+          <div id="advertisement-Panel" className="large-5 medium-5 small-12">
             <h1 className="brandName">BuyMore Dollars</h1>
             <h3 id="gameName">Scratch and Win Game</h3>
             <p id="bmd-description">
@@ -177,7 +178,8 @@ const FormPage = (props) => {
             <p className="bmd-prizes">10 Prizes of 100 BMD</p>
             <p className="bmd-prizes">100 Prizes of 20 BMD</p>
           </div>
-          <div id="form-Panel" className="large-6 medium-6 small-12">
+          <div className="large-1 medium-1 small-1"></div>
+          <div id="form-Panel" className="large-5 medium-5 small-12">
             <h2 id="bmd-form-title">Create an account</h2>
             <form id="bmd_form" action="#">
               <fieldset>
