@@ -4,10 +4,12 @@ import user from '../data.json';
 import React, {useCallback} from 'react';
 import {useNavigate} from 'react-router-dom';
 
+// define global variables
 let fieldsCheck;
 let firstName, firstNameError, lastName, lastNameError, province, provinceError, email, emailError, dob, dobError, password, passwordError, bmdConsent, bmdConsentError;
 let errorsDetected;
 
+// form validation
 let isNotEmpty = function(userInput) {
     let pattern = /^[a-zA-Z]+$/
     if (pattern.test(userInput.field.value.trim())){
@@ -36,7 +38,6 @@ let isValidEmail = function(userInput) {
     }
     return false;
 }
-
 let isValidDate = function(userInput) {
     let pattern = /^[0-9]+[-|\/][0-9]+[-|\/][0-9]+$/
     //Match any number for an unlimited amount of characters (probably could limit that to four at most)
@@ -79,7 +80,7 @@ let formChecker = function(e) {
 
     }
     else{
-        //Submit to server here.
+        //Submit user data
         console.log("Awesome. You are ready to play");
         user.user = [
           ...user.user,
@@ -95,7 +96,6 @@ let formChecker = function(e) {
         ]
         console.log(user.user);
         return user.user;
-        // handleOnClick();
     }
 }
 
@@ -105,6 +105,7 @@ let errorsReset = function() {
     })
 }
 
+// get form values on load
 let initForm = function() {
     firstName = document.querySelector("#firstName");
     firstNameError = document.querySelector("#firstNameError");
@@ -143,9 +144,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const FormPage = () => {
 
+  // routing hooks
   const navigate = useNavigate();
   const handleOnClick = useCallback(() => navigate('/contest', {replace: true}), [navigate]);
-
 
   return (
     <section id="main" className="main">
@@ -213,9 +214,6 @@ const FormPage = () => {
                   Date of Birth
                 </label>
                 <input type="date" id="dob" name="dob" />
-                {/* <!-- <input name="Date of Birth" id="date" type="text" placeholder="Date">
-                                <input name="Date of Birth" id="month" type="text" placeholder="Month">
-                                <input name="Date of Birth" id="year" type="text" placeholder="Year"> --> */}
                 <p className="bmd-error" id="dobError"></p>
               </fieldset>
               <fieldset>
