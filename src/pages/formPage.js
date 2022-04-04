@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom';
 
 let fieldsCheck;
 let firstName, firstNameError, lastName, lastNameError, province, provinceError, email, emailError, dob, dobError, password, passwordError, bmdConsent, bmdConsentError;
-
+let errorsDetected;
 
 let isNotEmpty = function(userInput) {
     let pattern = /^[a-zA-Z]+$/
@@ -66,11 +66,11 @@ let hasUserAcceptedTerms = function(userInput){
 }
 
 let formChecker = function(e) {
-    let errorsDetected = 0;
+    errorsDetected = 0;
     errorsReset();
     e.preventDefault(); //Prevent default form submit behavior.
     fieldsCheck.forEach(field => {
-        if (field.checker(field)==false){
+        if (field.checker(field)===false){
             field.error.innerText = field.msg;
             errorsDetected++;
         }
@@ -232,7 +232,7 @@ const FormPage = () => {
                 </label>
               </fieldset>
               <p className="bmd-error" id="bmdConsentError"></p>
-              <input type="submit" value="Let Me Play!" id="formSubmit" />
+              <input type="submit" value="Let Me Play!" id="formSubmit" onClick={() =>  {errorsDetected === 0 &&  handleOnClick()}}/>
             </form>
           </div>
         </div>
