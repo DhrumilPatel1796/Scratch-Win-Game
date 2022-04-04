@@ -7,7 +7,7 @@ import ScratchableCard from "../components/scratchableCard";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = (props) => {
-    let [canPlay, setCanPlay] = useState(true);
+    let [canPlay, setCanPlay] = useState(false);
     let [remainingHours, setRemainingHours] = useState(100);
     let navigate = useNavigate();
     useEffect(() => {
@@ -43,14 +43,22 @@ const ContestPage = (props) => {
 
     return (
         <main>
-            <ContestHeader />
-            <section id="scratchCardContainer">
-            {canPlay
-                ? <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
-                :<h2>Ooops, please wait {remainingHours} before playing again</h2>
-            }
-            </section>
-            <Sponsors />
+            {canPlay? 
+                <div>
+                    <ContestHeader />
+                    <section id="scratchCardContainer">
+                        {canPlay?
+                            <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
+                            :<h2>Ooops, please wait {remainingHours} before playing again</h2>
+                        }
+                    </section>
+                    <Sponsors />
+                </div>
+                :<div id="placeholderTallDiv"></div>
+                }
+
+
+                
         </main>
     );
 }
