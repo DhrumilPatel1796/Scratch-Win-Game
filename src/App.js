@@ -22,7 +22,6 @@ function App() {
   let setResults = function (result, prize){
     setWin(result);
     setPrize(prize);
-    console.log('Results were set');
   }
 
   return (

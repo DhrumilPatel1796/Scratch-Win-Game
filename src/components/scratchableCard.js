@@ -12,10 +12,7 @@ function createPrizeCard(prizes, setResults){
     for (let i = 0; i < 3; i++) {
         cardNumbers.push(prizes[Math.floor(Math.random() * prizes.length)])
     }
-    console.log(`${cardNumbers[0]}:${cardNumbers[1]}:${cardNumbers[2]}`);
     if(cardNumbers[0] === cardNumbers[1] && cardNumbers[1] === cardNumbers[2]){
-        console.log('Should be winning');
-        
         setResults(true, cardNumbers[0]);
     }
     else{
@@ -33,7 +30,9 @@ const ScratchableCard = (props) => {
     let sc;
     useEffect(() => {
         
-        document.getElementById('js--sc--container').innerHTML = '';
+        if(document.getElementById('js--sc--container')){
+            document.getElementById('js--sc--container').innerHTML = '';
+        }
         prizeCard = createPrizeCard(prizes, props.setResults);
         scContainer = document.getElementById('js--sc--container')
         scInfos = document.querySelector('.sc__infos');
@@ -53,8 +52,9 @@ const ScratchableCard = (props) => {
         });
 
         function handleResize() {
-            console.log('Triggering changeSize')
-            document.getElementById('js--sc--container').innerHTML = '';
+            if(document.getElementById('js--sc--container')){
+                document.getElementById('js--sc--container').innerHTML = '';
+            }
             sc = new ScratchCard('#js--sc--container', {
                 scratchType: SCRATCH_TYPE.BRUSH,
                 containerWidth: scContainer.offsetWidth,
@@ -82,7 +82,7 @@ const ScratchableCard = (props) => {
                 scInfos.innerHTML = percent + '%';
                 // console.log(percent);
                 //Trigger clear
-                if (percent>20){
+                if (percent>15){
                     sc.clear();
                 }
             })
