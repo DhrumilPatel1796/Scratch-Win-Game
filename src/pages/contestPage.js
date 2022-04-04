@@ -13,7 +13,7 @@ const ContestPage = (props) => {
             <ContestHeader />
             <h1>I am the contest page 😎</h1>
             <section id="scratchCardContainer">
-                <ScratchableCard setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
+                <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
             </section>
             <Sponsors />
         </main>

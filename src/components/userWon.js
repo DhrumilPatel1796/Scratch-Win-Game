@@ -5,11 +5,12 @@ import mathData from '../data.json';
 let randNum = Math.floor(Math.random() * 10);
 
 class UserWon extends React.Component {
-
+    
     constructor(props) {
         super(props);
         this.state = {
-            win: true
+            win: true,
+            userPrize: this.props.userPrize
         };
     }
 
@@ -24,7 +25,7 @@ class UserWon extends React.Component {
         let correctAnswer = questionData.getAttribute('id');
 
         // check if user got answer correct
-        if (userAnswer == correctAnswer) {
+        if (userAnswer === correctAnswer) {
             // show details on win
             winningContainer.innerHTML = `<div class="puzzle"><p>You will receive your BMDs in the next 6-8 weeks</p><p>Thanks for playing! Play again in 72 hours!</p></div>`
             // hide question
@@ -44,7 +45,7 @@ class UserWon extends React.Component {
     render () {
         return (
             <article className="user-won cell large-6">
-                <h2>You've won XXX BMDs!</h2>
+                <h2>You've won {this.props.userPrize} BMDs!</h2>
                 {mathData.mathData.map((data, key) => {
                     return (
                         <aside key={key} className='skill-testing'>

@@ -21,7 +21,7 @@ function App() {
   let setResults = function (result, prize){
     setWin(result);
     setPrize(prize);
-    console.log('results were set')
+    console.log('Results were set');
   }
 
   return (
@@ -32,8 +32,8 @@ function App() {
         <Route index element={<HomePage/>} />
         <Route path="form" element={<FormPage />} />
         <Route path="legal" element={<LegalPage/>} />
-        <Route path="results" element={<ResultsPage />} />
-        <Route path="contest" element={<ContestPage stringTest={"Hello from parent"} setWin={setWin}  setPrize={setPrize}/>} />
+        <Route path="results" element={<ResultsPage didUserWin={win} userPrize={userPrize}/>} />
+        <Route path="contest" element={<ContestPage setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
