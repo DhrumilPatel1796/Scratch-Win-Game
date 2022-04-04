@@ -1,14 +1,16 @@
 import '../styles.css';
 import { useNavigate } from "react-router-dom";
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, useRef } from 'react';
 // import ScratchCard from "../components/scratchCard";
 import ContestHeader from '../components/contestHeader';
 import ScratchableCard from "../components/scratchableCard";
+import PleaseWaitMessage from "../components/pleaseWaitMessage";
 import Sponsors from '../components/sponsors';
 
 const ContestPage = (props) => {
     let [canPlay, setCanPlay] = useState(false);
-    let [remainingHours, setRemainingHours] = useState(100);
+    let [hasWaited, setHasWaited] = useState(true);
+
     let navigate = useNavigate();
     useEffect(() => {
         console.log(props.user);
@@ -17,14 +19,21 @@ const ContestPage = (props) => {
             navigate("/form", { replace: true });
         }
         else{
-            let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
-            let remaining = 72 - hours;
-            let days = Math.floor(remaining/24);
-            let hms = new Date(remaining * 3600 * 1000).toISOString().substr(11, 8)
-            setRemainingHours(`${days} days ${hms}`);
-            if (hours<72){
-                setCanPlay(false);
-            }
+                let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
+                if (hours<72){
+                    setHasWaited(false);
+                }
+                else{
+                    setHasWaited(true);
+                }
+            // let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
+            // let remaining = 72 - hours;
+            // let days = Math.floor(remaining/24);
+            // let hms = new Date(remaining * 3600 * 1000).toISOString().substr(11, 8)
+            // setRemainingHours(`${days} days ${hms}`);
+            // if (hours<72){
+            //     setCanPlay(false);
+            // }
         }
        
         // let tick =setInterval(()=>{
@@ -47,14 +56,14 @@ const ContestPage = (props) => {
                 <div>
                     <ContestHeader />
                     <section id="scratchCardContainer">
-                        {canPlay?
                             <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
-                            :<h2>Ooops, please wait {remainingHours} before playing again</h2>
-                        }
+                            {/* :<PleaseWaitMessage lastPlayed={props.user['lastParticipated']}></PleaseWaitMessage> */}
                     </section>
                     <Sponsors />
                 </div>
-                :<div id="placeholderTallDiv"></div>
+                :  hasWaited?
+                    <div id="placeholderTallDiv"></div>
+                    :<PleaseWaitMessage lastPlayed={props.user['lastParticipated']}></PleaseWaitMessage>
                 }
 
 
