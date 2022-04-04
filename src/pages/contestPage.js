@@ -16,14 +16,17 @@ const ContestPage = (props) => {
             setCanPlay(false);
             navigate("/form", { replace: true });
         }
-        let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
-        let remaining = 72 - hours;
-        let days = Math.floor(remaining/24);
-        let hms = new Date(remaining * 3600 * 1000).toISOString().substr(11, 8)
-        setRemainingHours(`${days} days ${hms}`);
-        if (hours<72){
-            setCanPlay(false);
+        else{
+            let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
+            let remaining = 72 - hours;
+            let days = Math.floor(remaining/24);
+            let hms = new Date(remaining * 3600 * 1000).toISOString().substr(11, 8)
+            setRemainingHours(`${days} days ${hms}`);
+            if (hours<72){
+                setCanPlay(false);
+            }
         }
+       
         // let tick =setInterval(()=>{
         //     let hours = Math.abs(props.user['lastParticipated'] - new Date()) / 36e5;
         //     let remaining = 72 - hours;
