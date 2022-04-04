@@ -11,7 +11,8 @@ class ResultsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            win: true
+            win: this.props.didUserWin,
+            userPrize: this.props.userPrize
         };
     }
 
@@ -24,7 +25,7 @@ class ResultsPage extends React.Component {
                     <ScratchCard />
                     <article className="grid-x grid-padding-x">
                         {didUserWin
-                            ? <UserWon />
+                            ? <UserWon userPrize={this.props.userPrize}/>
                             : <UserLost />
                         }
                     </article>
