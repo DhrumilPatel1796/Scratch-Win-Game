@@ -1,7 +1,7 @@
 import "../styles.css";
 import moneybag from "../images/svg/money-bag.svg";
 import user from '../data.json';
-import React, {useCallback} from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
 
 // define global variables
@@ -138,15 +138,16 @@ let initForm = function() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    initForm();
-});
 
 const FormPage = () => {
 
   // routing hooks
   const navigate = useNavigate();
   const handleOnClick = useCallback(() => navigate('/contest', {replace: true}), [navigate]);
+
+  useEffect(() => {
+    initForm();
+});
 
   return (
     <section id="main" className="main">

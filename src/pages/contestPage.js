@@ -11,7 +11,6 @@ const ContestPage = (props) => {
     return (
         <main>
             <ContestHeader />
-            <h1>I am the contest page 😎</h1>
             <section id="scratchCardContainer">
                 <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
             </section>
