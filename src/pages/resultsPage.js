@@ -1,5 +1,4 @@
 import '../styles.css';
-import ScratchCard from "../components/scratchCard";
 import React from 'react';
 import UserWon from "../components/userWon";
 import UserLost from "../components/userLost";
@@ -22,7 +21,6 @@ class ResultsPage extends React.Component {
             <main className="grid-x grid-padding-x">
                 <section className='cell large-10 medium-10 small-12'>   
                     <ContestHeader />
-                    <ScratchCard />
                     <article className="grid-x grid-padding-x">
                         {didUserWin
                             ? <UserWon userPrize={this.props.userPrize}/>
