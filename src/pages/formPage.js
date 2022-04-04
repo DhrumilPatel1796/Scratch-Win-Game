@@ -1,6 +1,8 @@
 import "../styles.css";
 import moneybag from "../images/svg/money-bag.svg";
 import user from '../data.json';
+import React, {useCallback} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 let fieldsCheck;
 let firstName, firstNameError, lastName, lastNameError, province, provinceError, email, emailError, dob, dobError, password, passwordError, bmdConsent, bmdConsentError;
@@ -93,6 +95,7 @@ let formChecker = function(e) {
         ]
         console.log(user.user);
         return user.user;
+        // handleOnClick();
     }
 }
 
@@ -139,6 +142,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const FormPage = () => {
+
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(() => navigate('/contest', {replace: true}), [navigate]);
+
+
   return (
     <section id="main" className="main">
       <main className="main-container">
