@@ -4,7 +4,7 @@ import couponCover from '../images/png/coins-w-blur.png';
 import brush from '../images/png/brush.png';
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
-const prizes = [20];
+const prizes = [100];
 
 
 function createPrizeCard(prizes, setResults){
