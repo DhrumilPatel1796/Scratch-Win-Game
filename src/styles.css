@@ -599,3 +599,6 @@ i {
 .title-bar {
   background: transparent;
 }
+.title-bar-title {
+  margin: auto;
+}
