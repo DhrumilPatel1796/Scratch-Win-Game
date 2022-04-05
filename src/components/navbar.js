@@ -64,19 +64,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-      {/* <header className="grid-container">
-        <div className="grid-x grid-padding-x header-bar">
-          <div className="large-3 medium-3 small-3 cell">
-            
-          </div>
-          <div className="large-9 medium-9 small-9">
-            <nav id="nav-buttons">
-              
-
-
-              
-            </nav>
-          </div>
-        </div>
-      </header> */}
