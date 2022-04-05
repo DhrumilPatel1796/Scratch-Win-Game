@@ -21,40 +21,31 @@ const navbar = () => {
 
 <div className="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
   <div className="top-bar-left">
-    <ul className="dropdown menu" data-dropdown-menu>
-      <li className="menu-text">
-        <Link to="/">
-              <img
-                className="bmd-logo"
-                src={require("../images/png/logo.png")}
-              />
-        </Link>
-      </li>
-      <li>
-          <Link to="/form">
-            <input type="button" value="Sign Up" id=""></input>
-          </Link>
-      </li>
-      <li>    
-        <Link to="/legal">
-          <input type="button" value="Terms and Conditions" id=""></input>
-        </Link></li>
-      <li>
-        <Link to="/results">
-          <input type="button" value="Results" id=""></input>
-        </Link>
-      </li>
-      <li>
-        <Link to={contestPageLink}>
-          <input
-            type="button"
-            value="Play To Win"
-            id="play"
-            className="button"
-          ></input>
-        </Link>
-      </li>
-    </ul>
+  <Link to="/">
+      <img
+        className="bmd-logo hide-for-medium-only hide-for-small-only"
+        src={require("../images/png/logo.png")}
+      />
+    </Link>
+  <nav id="nav-buttons">
+    <Link to="/form">
+      <input type="button" value="Sign Up" id=""></input>
+    </Link>
+    <Link to="/legal">
+      <input type="button" value="Terms and Conditions" id=""></input>
+    </Link>
+    <Link to="/results">
+      <input type="button" value="Results" id=""></input>
+    </Link>
+    <Link to={contestPageLink}>
+      <input
+        type="button"
+        value="Play To Win"
+        id="play"
+        className="button"
+      ></input>
+    </Link>
+  </nav>
   </div>
 </div>
 

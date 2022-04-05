@@ -587,8 +587,15 @@ i {
 /* FOUNDATIONS NAVBAR */
 .top-bar, .top-bar ul {
   background-color: transparent;
+  display: flex;
 }
 .top-bar, .top-bar ul li{
   display: flex;
   align-items: center;
+}
+.top-bar-left{
+  display: flex;
+}
+.title-bar {
+  background: transparent;
 }
