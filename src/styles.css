@@ -251,17 +251,15 @@ input:hover:not(.button) {
   place-items: center;
   text-align: center;
   color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 #prizeBag {
   height: 50%;
-  max-height: 60vh;
 }
 
 /* LEFT PANEL: ADVERTISEMENT END */
 #form-Panel {
   height: min-content;
+  padding-bottom: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border-width: 0;
@@ -283,16 +281,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 #bmd-form-title {
-  color: #79e7ff;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
-#gameName {
-  color: #34e718;
-  font-size: 1.5rem;
+
+#bmd_form .button {
+  margin: 1.5rem 0;
+}
+
+.inputLabel {
+  color: #fd73ff;
 }
 
 .bmd-prizes {
   font-size: 0.8rem;
+  margin: 5px 0px;
+}
+
+.bmd-prizes p {
+  margin: 0;
+}
+
+.bmd-prizes p:hover {
+  color: #34e718;
+  cursor: default;
 }
 
 label {
@@ -306,12 +317,16 @@ label {
 #dob {
   background: rgba(24, 0, 88, 0.92);
 }
+
+#bmd_form {
+  margin-bottom: 2rem;
+}
 #bmd_form fieldset {
   margin-bottom: 0.5rem;
 }
 #bmd_form fieldset input,
 #province {
-  width: 50%;
+  width: 80%;
   min-width: 15rem;
   max-height: 2rem;
   margin: 0;
@@ -325,21 +340,8 @@ label {
   align-items: center;
 }
 #formSubmit {
-  background: linear-gradient(180deg, #35f3ff 0%, #2fe99c 129.1%);
-  height: 3rem;
-  padding: 0.6rem;
-  font-size: 1rem;
-  color: #000;
-  font-weight: bold;
-  border-radius: 40px;
-  padding-top: 15px;
-  mix-blend-mode: normal;
+  text-align: end;
   cursor: pointer;
-  margin-top: 1rem;
-}
-
-#formSubmit:hover {
-  background: linear-gradient(180deg, #35f3ff 0%, #6ffff8 129.1%);
 }
 
 #bmd_form fieldset input#bmd-consent {
@@ -358,11 +360,11 @@ footer {
   bottom: 0;
   background: #040b3a;
   margin-top: 2.5rem;
-  place-content: center;
 }
 
 .footer {
   padding-left: 7rem;
+  align-items: center;
 }
 #nav-buttons-footer input:hover {
   color: #34e718;
