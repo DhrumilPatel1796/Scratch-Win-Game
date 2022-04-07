@@ -237,6 +237,13 @@ const FormPage = (props) => {
                 <p className="bmd-error" id="lastNameError"></p>
               </fieldset>
               <fieldset>
+                <label htmlFor="dob" className="dob inputLabel">
+                  Date of Birth
+                </label>
+                <input type="date" id="dob" name="dob" />
+                <p className="bmd-error" id="dobError"></p>
+              </fieldset>
+              <fieldset>
                 <label htmlFor="province" className="province inputLabel">
                   Province
                 </label>
@@ -263,13 +270,6 @@ const FormPage = (props) => {
                 </label>
                 <input name="email" id="email" type="text" />
                 <p className="bmd-error" id="emailError"></p>
-              </fieldset>
-              <fieldset>
-                <label htmlFor="dob" className="dob inputLabel">
-                  Date of Birth
-                </label>
-                <input type="date" id="dob" name="dob" />
-                <p className="bmd-error" id="dobError"></p>
               </fieldset>
               <fieldset>
                 <label htmlFor="password" className="password inputLabel">
