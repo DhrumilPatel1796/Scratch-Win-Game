@@ -179,9 +179,8 @@ input:hover:not(.button) {
   border: 3px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
-  justify-content: center;
-  padding: 1rem 1.5rem;
-  min-height: 27.5rem;
+  padding: 3rem 1.5rem;
+  min-height: 28rem;
   margin-bottom: 1rem;
 }
 
@@ -222,6 +221,9 @@ input:hover:not(.button) {
   align-items: center;
   align-self: center;
   margin: 1rem 0;
+}
+.icon-trophy {
+  margin-top: 6px;
 }
 .ptw-btn {
   display: flex;

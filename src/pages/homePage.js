@@ -120,7 +120,11 @@ const HomePage = () => {
 
         <div className="large-4 medium-4 small-12 cell">
           <div className="rules-box-card">
-            <img src={trophyicon} alt="icon trophy" className="rules-icons" />
+            <img
+              src={trophyicon}
+              alt="icon trophy"
+              className="rules-icons icon-trophy"
+            />
             <h3>Claim Your Prize</h3>
             <p>
               After scratching, your BuyMore Dollars will be added to your
