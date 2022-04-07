@@ -17,13 +17,16 @@ body {
   min-height: 100vh;
   height: 100%;
   box-sizing: border-box;
-  padding: 2rem;
   letter-spacing: 0.05rem;
 }
 
 main {
   margin: 0 auto;
   justify-content: center;
+}
+
+.navbar {
+  padding: 2rem 0;
 }
 
 /* Font Styling */
@@ -161,7 +164,7 @@ input:hover:not(.button) {
 .contest-content {
   margin: 4rem 0;
 }
-#placeholderTallDiv{
+#placeholderTallDiv {
   height: 100vh;
 }
 
@@ -352,35 +355,19 @@ label {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  bottom: 0;
   background: #040b3a;
-  margin-top: 3rem;
-  padding: 1rem 10% 1rem 10%;
+  margin-top: 2.5rem;
+  place-content: center;
 }
-.footer-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+
+.footer {
+  padding-left: 7rem;
 }
-#footer-links,
-#footer-social {
-  display: flex;
-  gap: 2rem;
-}
-#footer-social {
-  justify-content: right;
-}
-#footer-links a,
-#footer-social a {
-  text-decoration: none;
-  color: white;
-}
-#footer-links a:hover,
-#footer-social a:hover {
+#nav-buttons-footer input:hover {
   color: #34e718;
 }
+
 /* Medium and lower */
 @media only screen and (max-width: 40em) {
   #nav-logo {
@@ -411,15 +398,7 @@ footer {
     width: 100%;
     min-width: 5rem;
   }
-  #footer-links {
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-  #footer-social {
-    flex-direction: row;
-    gap: 1rem;
-    justify-self: unset;
-  }
+
   .sponsors-container img {
     margin-top: 1rem;
   }
@@ -506,26 +485,6 @@ i {
   font-size: 0.8rem;
 }
 
-/* FOOTER STYLES */
-
-.footer {
-  background-color: #0e0b3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-#nav-buttons-footer input {
-  border: none;
-  background: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-#nav-buttons-footer input:hover {
-  color: #34e718;
-}
 /* SCRATCH CARD */
 .sc__inner {
   position: relative;
@@ -585,15 +544,17 @@ i {
 }
 
 /* FOUNDATIONS NAVBAR */
-.top-bar, .top-bar ul {
+.top-bar,
+.top-bar ul {
   background-color: transparent;
   display: flex;
 }
-.top-bar, .top-bar ul li{
+.top-bar,
+.top-bar ul li {
   display: flex;
   align-items: center;
 }
-.top-bar-left{
+.top-bar-left {
   display: flex;
 }
 .title-bar {
