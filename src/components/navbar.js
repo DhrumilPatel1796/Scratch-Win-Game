@@ -1,7 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link,  useNavigate } from "react-router-dom";
 import React, { useCallback, useState, useEffect, useRef } from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  let logoutBttn;
   const contestPageLink = {
     pathname: "/contest",
     stringTest: "Hello from parent",
@@ -10,6 +11,22 @@ const Navbar = () => {
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
+  const navigate = useNavigate();
+  let logout = function(){
+    //Reset user.
+    props.setUser(0);
+    //Redirect home.
+    navigate("/", { replace: true });
+  }
+  let initNav = function () {
+    if(document.querySelector("#logout-bttn")){
+      logoutBttn = document.querySelector("#logout-bttn");
+      logoutBttn.addEventListener("click", logout);
+    }
+  }
+  useEffect(() => {
+    initNav();
+  });
   return (
     <>
       <main className="grid-container navbar">
@@ -49,10 +66,10 @@ const Navbar = () => {
               {toggleMenu && (
                 <nav id="nav-buttons">
                   <Link to="/login">
-                    <input type="button" value="Login" id=""></input>
+                    {props.user === 0 ? <input type="button" value="Login" id=""></input>:""}
                   </Link>
                   <Link to="/form">
-                    <input type="button" value="Sign Up" id=""></input>
+                    {props.user === 0 ?  <input type="button" value="Sign Up" id=""></input>:""}
                   </Link>
                   <Link to="/legal">
                     <input
@@ -64,6 +81,7 @@ const Navbar = () => {
                   <Link to="/results">
                     <input type="button" value="Results" id=""></input>
                   </Link>
+                  {props.user !== 0 ?  <input type="button" value="Logout" id="logout-bttn"></input>:""}
                   <Link to={contestPageLink}>
                     <input
                       type="button"

@@ -30,7 +30,7 @@ function App() {
     
     <BrowserRouter> 
     <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Navbar user={user} setUser={setUser}/>}>
         <Route index element={<HomePage/>} />
         <Route path="form" element={<FormPage setUser={setUser}/>} />
         <Route path="login" element={<LoginPage setUser={setUser}/>} />

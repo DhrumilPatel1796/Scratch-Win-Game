@@ -2,8 +2,7 @@ import "../styles.css";
 import React, { useCallback, useState, useEffect } from "react";
 import database from "../data.json";
 import { useNavigate } from "react-router-dom";
-
-import { Link } from "react-router-dom";
+import moneybag from "../images/svg/money-bag.svg";
 
 const LoginPage = (props) => {
   let fieldsCheck;
@@ -106,10 +105,25 @@ const LoginPage = (props) => {
 
 
   return (
-    <main>
-    <section className="grid-x grid-padding-x">
-    <div id="form-login" className="large-5 medium-6 small-12">
-            <h3 id="bmd-form-title">Login</h3>
+<section id="main" className="main">
+      <main className="main-container grid-container">
+        <div className="grid-x grid-padding-x">
+          <div id="advertisement-Panel" className="large-7 medium-6 small-12">
+            <h1 className="brandName">BuyMore Dollars</h1>
+            <h2>Scratch and Win Contest</h2>
+            <p id="bmd-description">
+              Sign up. Scratch! And claim your prize once every 72 hours.
+            </p>
+            <img src={moneybag} id="prizeBag" alt="logo" />
+            <div className="bmd-prizes">
+              <p>1 Prize of 10,000 BMD</p>
+              <p>5 Prizes of 750 BMD</p>
+              <p>10 Prizes of 100 BMD</p>
+              <p>100 Prizes of 20 BMD</p>
+            </div>
+          </div>
+          <div id="form-Panel" className="large-5 medium-6 small-12">
+          <h3 id="bmd-form-title">Login</h3>
             <form id="bmd_form" action="#">
             <p className="bmd-error" id="credentialsError"></p>
               <fieldset>
@@ -137,9 +151,9 @@ const LoginPage = (props) => {
               />
             </form>
           </div>
+        </div>
+      </main>
     </section>
-    </main>
-
     
   );
 };
