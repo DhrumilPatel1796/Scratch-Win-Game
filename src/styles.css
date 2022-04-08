@@ -1,0 +1,584 @@
+* {
+  font-size: 1.125rem;
+  /* TODO: Import fonts? */
+  font-family: new-order, sans-serif, "Helvetica Neue", Helvetica, Arial, sans;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(347.54deg, #02041c 61.41%, #2a1a8a 99.64%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.05rem;
+}
+
+main {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 2rem 0;
+}
+
+/* Font Styling */
+h1 {
+  font-family: alwyn-new-rounded-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-family: alwyn-new-rounded-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+h3 {
+  color: #79e7ff;
+  font-family: alwyn-new-rounded-web, sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p,
+h1,
+li,
+a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h4 {
+  color: #fd73ff;
+}
+
+.green-text,
+h5 {
+  color: #3be052;
+}
+/* End of Font Styling */
+
+img {
+  height: fit-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fa-regular {
+  text-align: center;
+  border: 2px solid #f5f5f5;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #f5f5f5;
+}
+
+.fa-brands {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  margin: 0.5em;
+}
+
+.scratch-card {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
+}
+
+/* Global Play to win button style */
+.button {
+  background-color: #3be052;
+  border: none;
+  padding: 1rem 2rem;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #fd73ff;
+}
+
+.button a {
+  color: #02041c;
+}
+#main {
+  padding: 5px;
+}
+
+/* Navbar Styling */
+
+.bmd-logo {
+  max-width: 80%;
+}
+
+.header-bar {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+input:not(.button) {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input:hover:not(.button) {
+  color: #fd73ff;
+}
+
+/* End of Navbar Styling */
+
+/* Home Page Styling */
+
+.contest-content {
+  margin: 4rem 0;
+}
+#placeholderTallDiv {
+  height: 100vh;
+}
+
+.hero-image {
+  text-align: end;
+}
+.scratch-win-box-card,
+.prizes-box-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0b3d;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
+  padding: 3rem 1.5rem;
+  min-height: 28rem;
+  margin-bottom: 1rem;
+}
+
+.prizes-list * {
+  margin: 0;
+}
+
+.prize-info {
+  padding-bottom: 0.625rem;
+}
+
+.prizes-coin {
+  align-self: center;
+  margin-top: -2rem;
+}
+.coingroup {
+  min-width: 95%;
+}
+
+.rules-content {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  row-gap: 2rem;
+}
+.rules-box-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0b3d;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
+  box-shadow: inset 0 3px 10px hsla(0, 0%, 0%, 0.353);
+  min-height: 24rem;
+  padding: 0 1.5rem;
+}
+.rules-icons {
+  max-width: 50%;
+  align-items: center;
+  align-self: center;
+  margin: 1rem 0;
+}
+.icon-trophy {
+  margin-top: 6px;
+}
+.ptw-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors-box-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  row-gap: 0.875rem;
+  background-color: #0e0b3d;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #79e7ff, #fd73ff);
+  padding: 1.5rem 2rem;
+  margin: 5rem 0;
+}
+
+/* End of Home Page */
+
+/* FORM PAGE */
+/* LEFT PANEL: ADVERTISEMENT */
+#advertisement-Panel {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+#prizeBag {
+  height: 50%;
+}
+
+/* LEFT PANEL: ADVERTISEMENT END */
+#form-Panel {
+  height: min-content;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-width: 0;
+  border-image: url("images/svg/form_separator.svg") 1 stretch;
+  border-style: solid;
+  border-left-width: 5px;
+  color: white;
+}
+.bmd-error {
+  color: red;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: white;
+  opacity: 1;
+  background: url("images/svg/calendar-days-solid.svg") no-repeat; /* Calendar icon for browsers like Edge and Chrome */
+  width: 1.3em;
+  height: 1.3em;
+  border-width: thin;
+  cursor: pointer;
+}
+#bmd-form-title {
+  margin: 2rem 0;
+}
+
+#bmd_form .button {
+  margin: 1.5rem 0;
+}
+
+.inputLabel {
+  color: #fd73ff;
+}
+
+.bmd-prizes {
+  font-size: 0.8rem;
+  margin: 5px 0px;
+}
+
+.bmd-prizes p {
+  margin: 0;
+}
+
+.bmd-prizes p:hover {
+  color: #34e718;
+  cursor: default;
+}
+
+label {
+  color: #fd73ff;
+  font-size: 1rem;
+}
+
+#province option {
+  background: rgba(24, 0, 88, 0.92);
+}
+#dob {
+  background: rgba(24, 0, 88, 0.92);
+}
+
+#bmd_form {
+  margin-bottom: 2rem;
+}
+#bmd_form fieldset {
+  margin-bottom: 0.5rem;
+}
+#bmd_form fieldset input,
+#province {
+  width: 80%;
+  min-width: 15rem;
+  max-height: 2rem;
+  margin: 0;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #79e7ff;
+  background: none;
+}
+#bmd-consent-fieldset {
+  display: flex;
+  align-items: center;
+}
+#formSubmit {
+  text-align: end;
+  cursor: pointer;
+}
+
+#bmd_form fieldset input#bmd-consent {
+  background: rgba(24, 0, 88, 0.92);
+  min-width: 1rem;
+  max-width: 2rem;
+  color: white;
+  width: auto;
+  max-height: 2rem;
+}
+#bmd_form fieldset #bmd-consent-label {
+  color: white;
+}
+
+footer {
+  bottom: 0;
+  background: #040b3a;
+  margin-top: 2.5rem;
+}
+
+.footer {
+  padding-left: 7rem;
+  align-items: center;
+}
+#nav-buttons-footer input:hover {
+  color: #34e718;
+}
+
+/* Medium and lower */
+@media only screen and (max-width: 40em) {
+  #nav-logo {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #logo-container {
+    text-align: center; /* Center logo on medium and lower screen sizes */
+    height: 5rem;
+  }
+  #nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+}
+  #form-Panel {
+    border-width: 0; /* Remove separator on smaller screens */
+    border-image: none;
+  }
+
+  #prizeBag {
+    height: 45%;
+    max-height: 50vh;
+  }
+  #bmd_form fieldset input,
+  #province {
+    width: 100%;
+    min-width: 5rem;
+  }
+
+  .sponsors-container img {
+    margin-top: 1rem;
+  }
+}
+/* Login page */
+#form-login {
+  height: min-content;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-width: 0;
+  border-style: solid;
+}
+/* RESULTS PAGE */
+/* user lost */
+#timerText{
+  margin-bottom: 50vh;
+}
+.result-message {
+  text-align: center;
+}
+.result-instructions {
+  margin: 1rem 0;
+}
+.user-won,
+.user-lost {
+  margin: 0 auto;
+  text-align: center;
+}
+.coupon {
+  margin: 2rem auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.puzzle {
+  background-image: url("./images/svg/card-glass.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  /* display: flex;
+  flex-flow: column;
+  justify-content: center; */
+}
+.puzzle p {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.puzzle label {
+  padding: 0.2rem 0.5rem;
+}
+#math {
+  max-width: 5rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #34e718;
+  color: #fff;
+  padding: 0rem 0.5rem;
+}
+label {
+  color: #fff;
+}
+
+/* .sponsors {
+  background-image: url("./images/svg/card-glass.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.sponsors h3 {
+  margin-top: 0;
+} */
+.sponsors-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/* Legal Page Styles */
+
+.playBtn-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+i {
+  font-size: 0.8rem;
+}
+
+/* SCRATCH CARD */
+.sc__inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sc__wrapper {
+  display: block;
+  width: 100%;
+  /* height: 300px;
+  max-width: 300px; */
+  margin: 0 auto;
+  border: none;
+}
+
+.sc__container {
+  position: relative;
+  overflow: hidden;
+  /* height: 300px;
+  max-width: 300px; */
+}
+
+.sc__container > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sc__container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.sc__infos {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.the-scratch-card {
+  margin: auto;
+}
+#the_card {
+  background: #a955ff;
+}
+#scratch-card-svg {
+  height: 100%;
+}
+
+/* FOUNDATIONS NAVBAR */
+.top-bar,
+.top-bar ul {
+  background-color: transparent;
+  display: flex;
+}
+.top-bar,
+.top-bar ul li {
+  display: flex;
+  align-items: center;
+}
+.top-bar-left {
+  display: flex;
+}
+.title-bar {
+  background: transparent;
+}
+.title-bar-title {
+  margin: auto;
+}

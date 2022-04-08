@@ -1,0 +1,32 @@
+{
+    "mathData": [
+        {"id": 1, "question": "2 + 2 =", "answer": 4},
+        {"id": 2, "question": "5 * 8 =", "answer": 40},
+        {"id": 3, "question": "2^3 + 1 =", "answer": 9},
+        {"id": 4, "question": "90 - 72 =", "answer": 18},
+        {"id": 5, "question": "6 + 1 =", "answer": 7},
+        {"id": 6, "question": "8/2 =", "answer": 4},
+        {"id": 7, "question": "9 * 3 =", "answer": 27},
+        {"id": 8, "question": "6 + 7 =", "answer": 13},
+        {"id": 9, "question": "56 + 72 =", "answer": 128},
+        {"id": 10, "question": "1000/5 =", "answer": 200}
+    ],
+    "user": [
+        {   "consent": "on",
+            "dateOfBirth": "1900-04-12",
+            "email": "stuart@scratchcard.ca",
+            "firstName": "Stuart",
+            "lastName": "Sackler",
+            "lastParticipated": 324062783875,
+            "password": "Qwerty#1",
+            "province": "ON"},
+        {   "consent": "on",
+            "dateOfBirth": "1900-04-12",
+            "email": "plasnid@scratchcard.ca",
+            "firstName": "Plasnid",
+            "lastName": "Sackler",
+            "lastParticipated": 324062783875,
+            "password": "Qwerty#1",
+            "province": "ON"}
+    ]
+}
