@@ -407,7 +407,15 @@ footer {
     margin-top: 1rem;
   }
 }
-
+/* Login page */
+#form-login {
+  height: min-content;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-width: 0;
+  border-style: solid;
+}
 /* RESULTS PAGE */
 /* user lost */
 .result-message {

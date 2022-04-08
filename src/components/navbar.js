@@ -48,6 +48,9 @@ const Navbar = () => {
               </Link>
               {toggleMenu && (
                 <nav id="nav-buttons">
+                  <Link to="/login">
+                    <input type="button" value="Login" id=""></input>
+                  </Link>
                   <Link to="/form">
                     <input type="button" value="Sign Up" id=""></input>
                   </Link>

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ContestPage from "./pages/contestPage";
 import FormPage from "./pages/formPage";
+import LoginPage from "./pages/loginPage";
 import HomePage from "./pages/homePage";
 import LegalPage from "./pages/legalPage";
 import ResultsPage from "./pages/resultsPage";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Navbar />}>
         <Route index element={<HomePage/>} />
         <Route path="form" element={<FormPage setUser={setUser}/>} />
+        <Route path="login" element={<LoginPage/>} />
         <Route path="legal" element={<LegalPage/>} />
         <Route path="results" element={<ResultsPage didUserWin={win} userPrize={userPrize}/>} />
         <Route path="contest" element={<ContestPage user={user} setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />

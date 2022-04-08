@@ -12,6 +12,21 @@
         {"id": 10, "question": "1000/5 =", "answer": 200}
     ],
     "user": [
-        {"firstName": "", "lastName": "", "province": "", "email": "", "dateOfBirth": "", "password": "", "consent": "" }
+        {   "consent": "on",
+            "dateOfBirth": "1900-04-12",
+            "email": "stuart@scratchcard.ca",
+            "firstName": "Stuart",
+            "lastName": "Sackler",
+            "lastParticipated": 324062783875,
+            "password": "TYyt%%555%%",
+            "province": "ON"},
+        {   "consent": "on",
+            "dateOfBirth": "1900-04-12",
+            "email": "plasnid@scratchcard.ca",
+            "firstName": "Plasnid",
+            "lastName": "Sackler",
+            "lastParticipated": 324062783875,
+            "password": "TYyt%%555%%",
+            "province": "ON"}
     ]
 }
