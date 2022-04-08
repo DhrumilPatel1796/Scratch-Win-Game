@@ -36,7 +36,7 @@ function App() {
         <Route path="login" element={<LoginPage setUser={setUser}/>} />
         <Route path="legal" element={<LegalPage/>} />
         <Route path="results" element={<ResultsPage didUserWin={win} userPrize={userPrize}/>} />
-        <Route path="contest" element={<ContestPage user={user} setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />
+        <Route path="contest" element={<ContestPage user={user} setUser={setUser} setResults={setResults} setWin={setWin}  setPrize={setPrize}/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

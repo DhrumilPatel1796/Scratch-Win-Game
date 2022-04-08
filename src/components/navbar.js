@@ -78,9 +78,9 @@ const Navbar = (props) => {
                       id=""
                     ></input>
                   </Link>
-                  <Link to="/results">
+                  {/* <Link to="/results">
                     <input type="button" value="Results" id=""></input>
-                  </Link>
+                  </Link> */}
                   {props.user !== 0 ?  <input type="button" value="Logout" id="logout-bttn"></input>:""}
                   <Link to={contestPageLink}>
                     <input

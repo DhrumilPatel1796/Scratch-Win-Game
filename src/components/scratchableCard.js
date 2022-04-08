@@ -4,7 +4,7 @@ import couponCover from '../images/png/coins-w-blur.png';
 import brush from '../images/png/brush.png';
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
-const prizes = [100];
+const prizes = [100, 100, 20];
 
 
 function createPrizeCard(prizes, setResults){
@@ -82,8 +82,12 @@ const ScratchableCard = (props) => {
                 scInfos.innerHTML = percent + '%';
                 // console.log(percent);
                 //Trigger clear
-                if (percent>15){
+                if (percent>20){
                     sc.clear();
+                    //Set user last time played
+                    let tempUser = props.user;
+                    tempUser['lastParticipated'] = new Date();
+                    props.setUser(tempUser);
                 }
             })
 

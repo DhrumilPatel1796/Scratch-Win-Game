@@ -36,7 +36,7 @@ const ContestPage = (props) => {
                     <ContestHeader />
                     <section id="scratchCardContainer">
                             <h3> Congratulations {props.user["firstName"] ? props.user["firstName"]: ""}. You are one step away from something awesome.</h3>
-                            <ScratchableCard setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
+                            <ScratchableCard user={props.user} setUser={props.setUser} setResults={props.setResults} setWin={props.setWin} setPrize={props.setPrize}></ScratchableCard>
                     </section>
                     <Sponsors />
                 </div>
