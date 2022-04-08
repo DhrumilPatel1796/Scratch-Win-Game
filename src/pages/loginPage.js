@@ -25,7 +25,6 @@ const LoginPage = (props) => {
     errorsReset();
     e.preventDefault(); //Prevent default form submit behavior.
     fieldsCheck.forEach((field) => {
-      console.log(field);
       if (field.checker(field) === false) {
         field.error.innerText = field.msg;
         errorsDetected++;
@@ -54,7 +53,9 @@ const LoginPage = (props) => {
         }
         else{
           //Set error field;
-          document.querySelector("#credentialsError").innerHTML = "Invalid email or password.";
+          if(document.querySelector("#credentialsError")){
+            document.querySelector("#credentialsError").innerHTML = "Invalid email or password.";
+          }
         }
       })
     }
