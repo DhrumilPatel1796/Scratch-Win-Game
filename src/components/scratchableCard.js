@@ -54,22 +54,22 @@ const ScratchableCard = (props) => {
         function handleResize() {
             if(document.getElementById('js--sc--container')){
                 document.getElementById('js--sc--container').innerHTML = '';
+                sc = new ScratchCard('#js--sc--container', {
+                    scratchType: SCRATCH_TYPE.BRUSH,
+                    containerWidth: scContainer.offsetWidth,
+                    containerHeight: scContainer.offsetWidth/2.53,
+                    brushSrc: brush,
+                    imageForwardSrc: couponCover,
+                    htmlBackground: `<div id="the_card">${prizeCard}</div>`,
+                    clearZoneRadius: 0,
+                    nPoints: 30,
+                    pointSize: 4,
+                    callback: function () {
+                        navigate("/results", { replace: true });
+                    }
+                  });
+                  initScratchCard();
             }
-            sc = new ScratchCard('#js--sc--container', {
-                scratchType: SCRATCH_TYPE.BRUSH,
-                containerWidth: scContainer.offsetWidth,
-                containerHeight: scContainer.offsetWidth/2.53,
-                brushSrc: brush,
-                imageForwardSrc: couponCover,
-                htmlBackground: `<div id="the_card">${prizeCard}</div>`,
-                clearZoneRadius: 0,
-                nPoints: 30,
-                pointSize: 4,
-                callback: function () {
-                    navigate("/results", { replace: true });
-                }
-              });
-              initScratchCard();
         }
         initScratchCard();
         window.addEventListener('resize', handleResize);
