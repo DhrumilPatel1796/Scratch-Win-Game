@@ -44,7 +44,7 @@ const ScratchableCard = (props) => {
             imageForwardSrc: couponCover,
             htmlBackground: `<div id="the_card">${prizeCard}</div>`,
             clearZoneRadius: 0,
-            nPoints: 30,
+            nPoints: 300,
             pointSize: 4,
         callback: function () {
             navigate("/results", { replace: true });
