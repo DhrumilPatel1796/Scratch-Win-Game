@@ -12,7 +12,6 @@ const ContestPage = (props) => {
 
     let navigate = useNavigate();
     useEffect(() => {
-        console.log(props.user);
         if(props.user===0){
             setCanPlay(false); //Change back to false when done styling
             navigate("/form", { replace: true }); //Uncoment this when done styling

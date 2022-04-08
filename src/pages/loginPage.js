@@ -36,8 +36,13 @@ const LoginPage = (props) => {
       //Check for login info
       let users = database.user;
       users.forEach((user) => {
-        let email = document.querySelector("#loginEmail").value;
-        let password = document.querySelector("#loginPassword").value;
+        let email;
+        let password;
+        if (document.querySelector("#loginEmail") && document.querySelector("#loginPassword")){
+          email = document.querySelector("#loginEmail").value;
+          password = document.querySelector("#loginPassword").value;
+        }
+
   
         if ((email === user.email) && (password === user.password)) {
           //Clean THIS error field

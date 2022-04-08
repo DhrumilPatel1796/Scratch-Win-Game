@@ -2,7 +2,6 @@ import '../styles.css';
 import React, { useCallback, useState, useEffect, useRef } from 'react';
 
 const PleaseWaitMessage = (props) => {
-    console.log(props)
     let [remainingHours, setRemainingHours] = useState('2 days 23:59:59');
     useEffect(() => {
         let tick =setInterval(()=>{
