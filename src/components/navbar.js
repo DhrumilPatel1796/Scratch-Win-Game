@@ -59,7 +59,7 @@ const Navbar = (props) => {
             <div className="top-bar-left">
               <Link to="/">
                 <img
-                  className="bmd-logo hide-for-medium-only hide-for-small-only"
+                  className="bmd-logo hide-for-small-only"
                   src={require("../images/png/logo.png")}
                 />
               </Link>

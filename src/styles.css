@@ -383,11 +383,15 @@ footer {
     height: 5rem;
   }
   #nav-buttons {
-    place-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+}
   #form-Panel {
     border-width: 0; /* Remove separator on smaller screens */
     border-image: none;
@@ -418,6 +422,9 @@ footer {
 }
 /* RESULTS PAGE */
 /* user lost */
+#timerText{
+  margin-bottom: 50vh;
+}
 .result-message {
   text-align: center;
 }

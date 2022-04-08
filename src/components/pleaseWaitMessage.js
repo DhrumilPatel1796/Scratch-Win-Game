@@ -3,7 +3,7 @@ import React, { useCallback, useState, useEffect, useRef } from 'react';
 
 const PleaseWaitMessage = (props) => {
     console.log(props)
-    let [remainingHours, setRemainingHours] = useState(100);
+    let [remainingHours, setRemainingHours] = useState('2 days 23:59:59');
     useEffect(() => {
         let tick =setInterval(()=>{
             let hours = Math.abs(new Date(props.lastPlayed) - new Date()) / 36e5;
@@ -18,7 +18,7 @@ const PleaseWaitMessage = (props) => {
 
     return (
         <article className='user-lost cell large-6'>
-            <h2>Ooops, please wait {remainingHours} before playing again</h2>
+            <h2 id='timerText'>Ooops, please wait {remainingHours} before playing again</h2>
         </article>
     )
 };
